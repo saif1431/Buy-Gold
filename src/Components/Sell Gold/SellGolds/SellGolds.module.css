@@ -1,0 +1,209 @@
+
+
+.SellGolds{
+      width: 100vw;
+      height: 100vh;
+      background-color: #01016bbf;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 3vw;
+      /* padding: 2vw 2vw; */
+}
+.SellGoldsBox{
+      width: 35%;
+      height: fit-content     ;
+      background-color: #01016bbf;
+      border-radius: 5px;
+      border: 1px solid #555;
+      padding: 1vw 1vw;
+}
+.SellGoldsBox1{
+      display: flex;
+      align-items: center;
+      gap: .3vw;
+      padding: 2vw;
+}
+.shpCard{
+      font-size: 2vw;
+      color: #4D5779;
+}
+.SellGoldsBox1 h5{
+      font-size: 1vw;
+}
+.picgame{
+      padding: 2vw;
+}
+.picGames{
+      display: flex;
+      align-items: center;
+      gap: .3vw;
+      margin-top: 1vw;
+}
+.picGames1{
+      background-color:#07078f;
+      width: 48%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: .4vw 0vw;
+      border-radius: 7px;
+      border: 1px solid #23CD91;
+
+}
+.picGames2{
+      background-color:#07078f;
+      width: 48%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: .6vw 0vw;
+      border-radius: 7px;
+
+}
+.picGames img{
+      width: 3vw;
+}
+.picGameInput{
+      width: 85%;
+      background-color:#07078f;
+      padding: 0vw 1vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 auto;
+}
+.inputbox {
+      position: relative;
+      width: 100%;
+    }
+    
+    .inputbox input {
+      position: relative;
+      /* width: 100%; */
+      padding:1.3vw 1vw;
+      background-color:#07078f;
+      outline: none;
+      box-shadow: none;
+      border: none;
+      color: #23242a;
+      font-size: 1em;
+      letter-spacing: 0.05em;
+      transition: 0.5s;
+      z-index: 10;
+      color: #fff;
+    }
+    .SellGolds p{
+      margin-left: 3vw;
+      color: #88919F;
+      margin-top: .6vw;
+      font-size: 1.1vw;
+
+    }
+    .SellGolds button{
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1vw 2vw;
+      background-color: #231bb6;
+      color: #fff;
+      margin-top: 1.5vw;
+      font-size: 1.4vw;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+    }
+    .SellGolds button:hover{
+      background-color: #271dd7;
+}
+    
+    .inputbox i {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color:#07078f;
+      border-radius: 4px;
+      transition: 0.5s;
+      pointer-events: none;
+      z-index: 9;
+    }
+    
+    .inputbox input:valid ~i,
+    .inputbox input:focus ~i {
+      height: 44px;
+    }
+    .m{
+      background-color: #271dd7;
+padding: .8vw 1vw;
+border-radius: 7px;
+    }
+
+    @media screen and (width > 300px) and (width < 768px){
+      .SellGoldsBox{
+            width: 90%;
+            height:fit-content;
+            padding: 3vw 5vw;
+      }
+      .SellGoldsBox1{
+            gap: 2vw;
+      }
+      .SellGoldsBox1 h5{
+            font-size: 5vw;
+      }
+      .shpCard{
+            font-size: 7vw;
+      }
+      .SellGolds p{
+            font-size: 4vw;
+      }
+      .picGames img{
+            width: 8vw;
+      }
+      .picGames{
+            margin-top: 4vw;
+      }
+      .picgame{
+            margin-top: 10vw;
+      }
+      .picgame h5{
+            font-size: 5vw;
+      }
+      .picGames1{
+            width: 50%;
+            padding: 3vw ;
+      }
+      .picGames2{
+            width: 50%;
+            padding: 3vw ;
+      }
+      .SellGolds button{
+            font-size: 4.5vw;
+      }
+      .picGameInput{
+            width: 90%;
+            padding: 3vw 1vw;
+            margin-top: 10vw;
+      }
+      .inputbox input {
+            font-size: 5vw;
+      }
+      .SellGolds{
+            margin-top: 3vw;
+      }
+      .SellGolds p{
+            margin-top: 8vw;
+            font-size: 4vw;
+      }
+      .SellGolds button{
+            padding: 3vw 2vw;
+            font-size: 6vw;
+      }
+      .m{
+            padding: 3vw 4vw;
+    }
+
+}

@@ -1,0 +1,263 @@
+.navbar{
+      width: 100vw;
+      height: 17vh;
+      background-color:#07078f;
+      position: fixed;
+      top: 0;
+   z-index: 1000;
+}
+/* TOP Nav------------------- */
+.topnav{
+      position: absolute;
+      left: 30%;
+      width: 70vw;
+      height: 2.4vw;
+      background-color:#01016bbf;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2vw 2vw;
+}
+
+/* Left Nav Code -------------------------- */
+.leftMenu{
+      position: absolute;
+      width: 20vw;
+      height: 100vh;
+      background-color: #00004D;
+      transform: translateX(-100%);
+      z-index: 10000;
+}
+.cros{
+      font-size: 7vw;
+      color: #65697B;
+      margin-left: 2vw;
+      margin-top: 5vw;
+      /* padding: 5vw; */
+}
+.leftnavItems2{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 3vw;
+      gap: 2vw;
+     
+}
+
+.leftnavItems2 button{
+      padding: 1vw 1.5vw;
+      color: #8891b7;  
+}
+.leftnavItems2 .btn1{
+      background-color: #01016bbf;
+      border: none;
+      outline: none;
+      padding: 3vw 2vw;
+}
+.leftnavItems2 .btn1:hover{
+      background-color: #01016bbf;
+      border-radius: 5px;
+      padding: 1.2vw 1.5vw;
+}
+.leftnavItems2 .btn2{
+      background-color: #01016bbf;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      padding: 3vw 1.5vw;
+}
+.leftnavItems2 .btn2:hover{
+      background-color: #01016bec;
+}
+
+.leftNavLinks{
+      display: flex;
+      flex-direction: column;
+      gap: 6vw;
+      padding: 5vw;
+      margin-top: 5vw;
+}
+.leftLinks{
+      color: #a7a3a3;
+      text-decoration: none;
+}
+.leftNavLinks2{
+      display: flex;
+      flex-direction: column;
+      gap: 6vw;
+      padding: 5vw;
+      margin-top: 8vw;
+}
+
+.leftnavrating{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 25vw;
+      gap: 2vw;
+}
+.leftnavrating p{
+      color: #a7a3a3;
+      font-size: 2.9vw;
+      font-weight: 400;
+}
+.leftLinks, .links, .navLinks {
+      color: #8891b7;
+      text-decoration: none;
+    }
+
+/* Left Nav Code End------------------------ */
+.topnav1{
+      display: flex;
+      align-items: center;
+      gap: 2vw;
+}
+.topnav1 Link{
+      color: red;
+}
+.topnav2{
+      display: flex;
+      gap: .2vw;
+}
+.topnav2 p{
+      font-size: 1vw;
+      color: #8891b7;
+}
+.topnav2 p:hover{
+     
+      color: white;
+}
+.links{
+      font-size: 1vw;
+     color: #8891b7;
+     text-decoration: none;
+}
+.links:hover{
+      color: white;
+}
+.nav{
+      display: flex;
+      align-items: end;  
+      /* justify-content: space-evenly; */
+}
+.logo{
+      width: 40%;
+      padding-left: 9vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.logo img{
+      width: 43%;
+      height: 45%;
+}
+.navItems{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 17vw;
+      padding: 1vw 2.5vw;
+      margin-bottom: 0vw;
+      margin-right: 6vw;
+}
+.navLinks{
+      text-decoration: none;
+      color: #8891b7;
+font-size: 1.2vw;
+transition: all ease 1s;
+}
+.navLinks:hover{
+      color: white;
+}
+.navItems1{
+      display: flex;
+      align-items: center;
+      gap: 3.5vw;
+color: #65697B;
+}
+.menubar{
+      display: none;
+}
+.navItems1 Link{
+      color: #65697B;
+      text-decoration: none;
+}
+.navItems2{
+      display: flex;
+      align-items: center;
+      gap: .4vw;
+}
+.contact{
+      display: none;
+}
+.navItems2 button{
+      padding: 1vw 1.5vw;
+      color: #8891b7;  
+}
+.navItems2 .btn1{
+      background: none;
+      border: none;
+      outline: none;
+}
+.navItems2 .btn1:hover{
+      background-color: #01016bbf;
+      border-radius: 5px;
+      padding: 1.2vw 1.5vw;
+}
+.navItems2 .btn2{
+      background-color: #01016bbf;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      padding: 1.2vw 1.5vw;
+}
+.navItems2 .btn2:hover{
+      background-color: #01016bec;
+}
+
+
+@media screen and (width > 300px) and (width < 768px){
+      .navbar{
+            width: 100%;
+            height: 15vh;
+      }
+.menubar{
+      display: block;
+      font-size: 8vw;
+color: #65697B;
+}
+.leftMenu{
+      height: 100vh;
+      width: 35vh;
+}
+.cros{
+      margin: 10vw;
+}
+
+.topnav{
+      display: none;
+}
+.navItems{
+      display: none;
+}
+.logo{
+      width: 90%;
+      display: flex;
+      /* align-items: center; */
+      justify-content: space-between ;
+      padding: -1vw;
+     margin-bottom: 3vw;
+}
+.logo img{
+      width: 35%; 
+      height: 30%;
+}
+.contact{
+      display: block;
+      font-size: 6vw;
+      color: #65697B;
+}
+}

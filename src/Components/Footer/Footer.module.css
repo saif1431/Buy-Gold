@@ -1,0 +1,138 @@
+
+
+.footer{
+      width: 100vw;
+      height: 50vh;
+      background-color:#00004D;
+      /* font-size: 3vw; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4vw;
+}
+.footer1{
+      width: 15%;
+      height: 70%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.footer1 img{
+      width: 60%;
+      height: 60%;
+}
+.footer2{
+      width: 50%;
+      height: 70%;
+      padding: 1vw;
+}
+.footer2 h4{
+      font-size: 1.3vw;
+}
+.ftrLinks .ftrLink1{
+      display: flex;
+      align-items: center;
+      margin-top: 1.5vw;
+      gap: .3vw;
+      text-decoration: none;
+      color: #8891B7;
+      transition: all ease .5s;
+}
+.footer3{
+      width: 97%;
+      height: 70%;
+      padding: 1vw;
+}
+.ftrLinks .ftrLink2{
+      display: flex;
+      align-items: center;
+      margin-top: .7vw;
+      text-decoration: none;
+      color: #8891B7;
+      transition: all ease .5s;
+      margin-top: 1vw;
+      gap: 0vw;
+}
+.ftrLinks .ftrLink1:hover{
+      color: #fff;
+}
+.ftrLinks .ftrLink2:hover{
+      color: #fff;
+}
+.footer4{
+      width: 23%;
+      height: 70%;
+      padding: 2.5vw;
+      transition: all ease .5s;
+      /* background-color: rebeccapurple; */
+}
+.feature{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 5vw;
+      width: 27%;
+}
+.bottomFtr{
+      width: 100vw;
+      height: 7vh;
+      background-color: #01016bbf;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 5vw;
+}
+.bottomFtr p{
+      color: #8891B7;
+      font-size: .9vw;
+}
+
+
+@media screen and (width > 300px) and (width < 768px){
+      .footer{
+            width: 100vw;
+            height: 70vh;
+            flex-direction: column;
+      }
+      .footer1{
+width: 50%;
+height: 100%;
+      }
+      .footer1 img{
+            width: 70%;
+            height: 70%;
+      }
+      .footer2{
+width: 50%;
+height: 100%;
+      }
+      .footer2 h4{
+            font-size: 4vw;
+      }
+      .footer3{
+width: 43%;
+height: 100%;
+      }
+      .footer4{
+width: 90%;
+height: 100%;
+      }
+      .feature{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 4vw;
+      }
+      .bottomFtr{
+            width: 100vw;
+            height: 10vh;
+            flex-direction: column;
+            padding: 2vw 0vw;
+      }
+      .bottomFtr p{
+            font-size: 3vw;
+            width: 90%;
+            text-align: center;
+      }
+}

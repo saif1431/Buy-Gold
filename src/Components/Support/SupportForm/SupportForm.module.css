@@ -1,0 +1,167 @@
+
+html, body{
+      overflow-x: hidden;
+}
+.supportForm{
+      width: 100vw;
+      height: fit-content;
+      background-color: #00004D;
+      padding: 2vw 8vw;
+      margin-top: 9VW;
+}
+.supportFormDiv{
+      width: 50%;
+      height: fit-content;
+      background-color: #01016bbf;
+      border-radius: 8px;
+      border: 2px solid #222;
+}
+.supportFormDiv h3{
+      text-align: center;
+      padding: 1vw;
+}
+.supportFormDiv p{
+      width: 100%;
+      padding: 2vw;
+      color: #7191B7;
+      font-size: 1vw;
+}
+.SupportInput{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 2vw;
+}
+.SupportInput input{
+      width: 48%;
+      padding: 1.4vw;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      font-size: 1.1vw;
+      background-color: #07078f;
+      color: #7191B7;
+      border: 1px solid #7191b748;
+}
+.SupportInput input::placeholder{
+      color: #7191B7;
+}
+.SupportInput select{
+      width: 48%;
+      padding: 1.4vw;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      font-size: 1.2vw;
+      background-color: #07078f;
+      color: #7191B7;
+      border: 1px solid #7191b748;
+}
+
+.SupportInput select option{
+      margin: 4vw;
+}
+textarea{
+      width: 90%;
+      padding: 1vw ;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      font-size: 1.2vw;
+      background-color: #07078f;
+      color: #7191B7;
+      border: 1px solid #7191b748;
+      margin-left: 2vw;
+}
+.supportBtn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.supportFormDiv button{
+      width: 30%;
+      padding: 1vw;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      font-size: 1.2vw;
+      background-color: #231bb6;
+      color: #fff;
+      border: 1px solid #444;
+      margin-top: 2vw;
+      cursor: pointer;
+      transition: all ease .5s;
+}
+.companyInfo{
+      padding: 2vw;
+      color: #7191B7;
+}
+.companyInfo h4{
+      font-size: 1.2vw;
+}
+.info{
+      margin-top: 1vw;
+      
+}
+.info h6{
+      font-size: 1vw;
+      font-weight: 300;
+}
+
+@media screen and (width > 300px) and (width < 768px){
+      .supportFormDiv{
+            width: 100%;
+            height: fit-content;
+            margin-top: 20vw;
+      }
+      .supportFormDiv h3{
+            font-size: 6vw;
+      }
+      .supportFormDiv p{
+            width: 100%;
+            font-size: 4vw;
+            padding: 8vw 5vw;
+      }
+      .SupportInput{
+            flex-direction: column;
+            padding: 4vw;
+      } 
+      .SupportInput input{
+            width: 90%;
+            padding: 4vw;
+            font-size: 3vw;
+      }     
+      .SupportInput select{
+            width: 90%;
+            padding: 4vw;
+            font-size: 3vw;
+            margin-top: 2vw;
+      }     
+      textarea{
+            width: 90%;
+            padding: 2vw;
+            font-size: 3vw;
+            margin-left: 4vw;
+      }
+      .supportBtn{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+      }
+      .supportFormDiv button{
+            width: 50%;
+            padding: 4vw;
+            font-size: 3vw;
+            margin-top: 4vw;
+      }
+      .companyInfo{
+            margin-top: 1.5vw;
+      }
+      .companyInfo h4{
+            font-size: 4vw;
+      }
+      .info h6{
+            font-size: 3vw;
+            font-weight: 300;
+      }
+}

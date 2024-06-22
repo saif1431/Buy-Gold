@@ -1,0 +1,9 @@
+.VisaContainer{
+      width: 100vw;
+      height: 10vh;
+      background-color: #01016bbf;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;   
+}
+

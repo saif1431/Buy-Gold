@@ -1,0 +1,350 @@
+
+
+.mainContent{
+      width: 100vw;
+      display: flex;
+      height: fit-content;
+      /* align-items: center; */
+      justify-content: space-evenly;
+      margin-top: 13vw;
+}
+
+.content1{
+      width: 45vw;
+      height: 50vh;
+      /* background-color:; */
+      padding: 4vw;    
+}
+.content1 .heading1{
+      font-size: 2.7vw;
+}
+.content1 .heading2{
+      font-size: 5vw;
+      color: #FDD964;
+      font-weight: bold;
+}
+.content2{
+      width: 45vw;
+      height:fit-content;
+      overflow-x: hidden;
+      /* background-color: red;     */
+}
+.mainContentBtn{
+      display: flex;
+      align-items: center;
+      gap: 1.4vw;
+      margin-top: 4vw;
+}
+.mainContentBtn p{
+      color: #8891B7;
+      font-size: 1.1vw;
+}
+.mainContentBtn1{
+      overflow: hidden;
+      background-color: #01016bbf;
+      padding: 1vw 1.5vw;
+      border: 1px solid #808cbd3e;
+      border-radius: 5px;
+      font-size: 2vw;
+      color: #F9D635;
+}
+.mainContentBtn1 span{
+      background-color: #271dd7;
+      padding: .7vw 1vw;
+      border-radius: 7px;
+      margin-left: 2vw;
+      color: #fff;
+      font-size: 1.5vw;
+      font-weight: bold;
+}
+
+.content2Btns{
+      width: 100%;
+      height: 15%;
+      /* background-color: tan; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* gap: .5vw; */
+}
+.content2Btns1{
+      width: 40%;
+      height: 100%;
+      background-color: #01016bbf;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+}
+.content2Btns2{
+      width: 40%;
+      height: 100%;
+      background-color: #01016bbf;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      border: 1.5px solid #1BB67F;  
+}
+.payments{
+      width: 80%;
+      height: 100%;
+      background-color: #01016bbf;
+      margin: 0 auto;
+      margin-top: 2vw;
+      border-radius: 8px;
+      border: 1px solid #999;
+}
+.totalPrice{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2vw;
+}
+.cards{
+      display: flex;
+      align-items: center;
+      gap: .4vw;
+}
+.cards h6{
+      font-size: 1.1vw;
+}
+.ShoppingCart{
+      font-size: 2vw;
+      color: #495374;
+}
+.TotalPrice{
+      display: flex;
+      align-items: center;
+      gap: .6vw;
+}
+.TotalPrice h6{
+      font-size: 1vw;
+      color: #887D87;
+}
+.amountInputs{
+      display: flex;
+      align-items: center;
+      justify-content:space-around;
+      padding: 1vw;
+}
+.amountInputs input{
+      /* padding: 1vw 1vw; */
+      background-color: #07078f;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      color: #fff;
+}
+.amountSpan{
+      padding: 1vw .3vw;
+      background-color: #07078f;
+}
+.amountSpan span{
+      background-color: #271dd7;
+      padding: .7vw .8vw;
+      border-radius: 5px;
+}
+.amount p{
+      font-size: 1vw;
+}
+.price p{
+      font-size: 1vw;
+}
+.runescape{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 1vw;
+      margin-top: 0vw;
+}
+.runescape input{
+      padding: 1.3vw 1.5vw;
+      background-color: #07078f;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      color: #fff;
+}
+.visaCards {
+      padding: 3vw;
+   
+}
+.visaCards h6{
+      font-size: 1vw;
+}
+.Card{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+gap: 1vw;
+margin-top: 1vw;
+}
+.Cards{
+width: 100%;
+height: 10%;
+/* background-color: green; */
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.visa1{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30% ;
+      height: 7vh;
+      background-color: #07078f;
+      border-radius: 6px;
+}
+
+.bank img{
+      background-color:#07078f;
+      border-radius: 5px;
+      /* padding: 1vw 1vw; */
+
+}
+.buyButton{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1vw 2vw;
+}
+.buyButton button{
+      width: 90%;
+      padding: 1vw 0;
+      background-color: #231bb6;
+      font-size: 1.4vw;
+      color: #fff;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .3vw;
+}
+.buyButton button:hover{
+      background-color: #271dd7;
+}
+.whyPie{
+      display: flex;
+      flex-direction: column;
+      margin-left: 7vw;
+      gap: 1vw;
+      /* transform: translateY(-100%); */
+}
+.whyPie h5{
+      color: #5c6993;
+      text-decoration: underline;
+      font-size: 1.2vw;
+
+}
+.whyPie h5:hover{
+      color: white;
+}
+
+@media screen and (width > 300px) and (width < 768px){
+      .mainContent{
+            flex-direction: column;
+      }   
+      .content1{
+            width: 90%;
+            height: 20vh;
+            margin-top:20vw;
+      }
+      .content1 .heading1{
+            font-size: 5vw;
+      }
+      .content1 .heading2{
+            font-size: 9vw;
+            color: #FDD964;
+            font-weight: bold;
+      }
+      .mainContentBtn{
+            gap: 3vw;
+      }
+      .mainContentBtn p{
+            color: #8891B7;
+            font-size: 3vw;
+      }
+      .mainContentBtn1{
+            font-size: 7vw;
+            padding: 1vw 4vw;
+      }
+      .mainContentBtn1 span{
+            font-size: 5vw;
+      }
+      .content2{
+            margin-top: 7vw;
+            width: 100%;
+      }
+      .cards h6{
+            font-size: 3vw;
+      }
+      .ShoppingCart{
+            font-size: 5vw;
+            color: #495374;
+      }
+      .TotalPrice h6{
+            font-size: 3vw;
+            color: #887D87;
+      }
+      .amountInputs{
+            display: flex;
+            gap: 2vw;
+            margin-top: 1vw;
+            padding: 3vw 4vw;
+      }
+      .amountInputs input{
+            font-size: 4vw;
+            width: 60%;
+      }
+      .amountSpan{
+            padding: 3vw 2vw;
+      }
+      .amount p{
+            font-size: 3vw;
+      }
+      .price p{
+            font-size: 3vw;
+      }
+      .runescape{
+            gap: 1vw;
+            padding: 2vw 4vw;
+      }
+      .runescape input{
+            width: 50%;
+            padding: 3vw 2vw;
+            font-size: 4vw;
+      }
+      .visaCards{
+            margin-top: 2vw;
+      }
+      .visaCards h6{
+            font-size: 4vw;
+      }
+      .visa1{
+            margin-top: 2vw;
+            width: 30%;
+            padding: 1vw 3vw;
+      }
+      .visa1 img{
+            width: 90%;
+      }.buyButton button{
+            font-size: 4vw;
+            padding: 1vw 3vw;
+      }
+      .whyPie{
+            margin-top: 4vw;
+      }
+      .whyPie h5{
+            font-size: 4vw;
+      }
+      .whyPie h2{
+            margin-top: 1vw;
+            font-size: 3.3vw;
+            font-weight: 500;
+      }
+}
+

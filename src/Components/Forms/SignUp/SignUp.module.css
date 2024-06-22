@@ -1,0 +1,212 @@
+
+.Login{
+      position: fixed;
+      width: 57vw;
+      height: 90vh;
+      background-color:#2F354D;
+      border-radius: 10px;
+      top: 5%;
+      left: 20%;
+      transform: translate(-50% -50%);
+      box-shadow: 0px 0px 3px 3px #555;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      z-index: 1000;
+}
+.LoginSide1{
+width: 50%;
+height: 100%;
+background-color:#00004D;
+}
+.LoginSide2{
+width: 50%;
+height: 100%;
+background-color: #090961;
+}
+.logo{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1vw;
+}
+.logo img{
+      width: 23%;
+      height: 23%;
+}
+.mainImg {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+}
+.mainImg img{
+      width: 65%;
+      height: 60%;
+}
+.pTag{
+      display: flex;
+      flex-direction: column;
+      gap: 1vw;
+      padding: 0vw 1vw;
+}
+.pTag p{
+      font-size: 1.3vw;
+}
+
+.LoginSide2 h1{
+      text-align: center;
+      margin-top: 2vw;
+}
+.inputBox{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1vw;
+      margin-top: 3vw;
+}
+.cross{
+      position: absolute;
+      font-size: 1.7vw;
+      color: #6F7799;
+      top: 2vw;
+      right: 2vw;
+      cursor: pointer;
+}
+.cross:hover{
+      color: #fff;
+}
+.inputBox p{
+      font-size: 1.2vw;
+      color: #6F7799;
+      transition: all ease .5s      ;
+}
+.inputBox p:hover{
+      color: #fff;
+}
+.inputBox input{
+      width: 80%;
+      padding: 1.2vw 1vw;
+      font-size: 1.2vw;
+      border: none;
+      outline: none;
+      border-radius: 4px;     
+      background-color: #07078f;
+      color: #fff;
+      border: 1px solid #444;
+}
+.terms{
+      width: 100%;
+      display: flex;
+      align-items: center;
+}
+.terms input{
+      width: 10%;
+}
+.terms h5{
+      font-size: 1vw;
+      color: #6F7799;
+}
+.terms .termLink{
+      color: #6F7799;
+}
+.terms .termLink:hover{
+      color: #fff;
+}
+.inputBox button{
+      width: 80%;
+      padding: 1.2vw 1vw;
+      font-size: 1.2vw;
+      border: none;
+      outline: none;
+      border-radius: 4px;     
+      background-color: #231bb6;
+      color: #fff;
+      border: 1px solid #444;
+      cursor: pointer;
+      transition: all ease 1s;
+}
+
+.inputBox button:hover{
+      background-color: #1d1791;
+}
+.JumpReg{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1vw;
+      margin-top: 9vw;
+}
+.Jump{
+      text-decoration: none;
+      color: #fff;
+font-size: 1.2vw;
+}
+
+.JumpReg p{
+      font-size: 1.2vw;
+      color: #6F7799;
+}
+
+
+@media screen and (width > 300px) and (width < 768px){
+      .Login{
+            width: 70%;
+            height: fit-content;
+            margin-top: 20vw;
+            /* padding: 1vw; */
+      }
+ .LoginSide1{
+      display: none;
+ }     
+ .LoginSide2{
+      width: 100%;
+      padding: 3vw;
+ }
+ .cross{
+      font-size: 5vw;
+ }
+ .LoginSide2 h1{
+      margin-top: 8vw;
+ }
+ .inputBox{
+      margin-top: 8vw;
+      gap: 3vw;
+ }
+ .inputBox input{
+      width: 80%;
+      padding: 3vw;
+      font-size: 3vw;
+ }
+ .terms{
+      width: 90%;
+
+ }
+ .terms input{
+      width: 10%;
+}
+.terms h5{
+      font-size: 3vw;
+}
+.terms .termLink{
+      font-size: 3vw;
+}
+.terms .termLink:hover{
+      color: #fff;
+}
+.inputBox button{
+      width: 80%;
+      padding: 3vw;
+      font-size: 3vw;
+      margin-top: 3vw;
+}
+.JumpReg{
+      margin-top: 15vw;
+}
+.Jump{
+      font-size: 3vw;
+}
+.JumpReg p{
+      font-size: 3vw;
+}
+}
