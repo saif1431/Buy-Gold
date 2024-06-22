@@ -4,6 +4,9 @@
       background-color: #00004D;
       padding: 4vw 8vw;
       margin-top: 8vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     
     .FAQSBox {

@@ -8,6 +8,9 @@ html, body{
       background-color: #00004D;
       padding: 2vw 8vw;
       margin-top: 9VW;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 }
 .supportFormDiv{
       width: 50%;
