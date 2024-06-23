@@ -184,8 +184,8 @@ function Navbar() {
             <button onClick={openSignUp} className={styles.btn2}>SIGN UP</button>
 
             {/* Account Button For Check Order History  */}
-            <Link style={{display:"none"}} to={"/TrancHistory"}>
-            <button>Account</button></Link>
+            <Link to={"/TrancHistory"}>
+            <button className={styles.AccountBtn} >Account</button></Link>
           </div>
         </div>
       </div>
