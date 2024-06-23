@@ -193,8 +193,12 @@ function Navbar() {
               </>
             )}
             {/* Account Button For Check Order History  */}
-            <Link to={"/TrancHistory"}>
-            <button className={styles.AccountBtn} >Account</button></Link>
+        {
+          isAuthorized && <>
+          <Link  to={"/TrancHistory"}>
+          <button>Account</button></Link>
+          </>
+        }
           </div>
         </div>
       </div>
