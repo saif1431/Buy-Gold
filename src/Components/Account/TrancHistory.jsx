@@ -3,6 +3,11 @@ import styles from './TrancHistory.module.css'
 import Logo from '../../images/twitters.png'
 import { HiShoppingCart } from "react-icons/hi";
 function TrancHistory() {
+  const handleLogout = () => {
+    localStorage.removeItem('user');
+    localStorage.removeItem('isAuthorized');
+    window.location.reload();
+  }
   return (
     <div>
       <div className={styles.TrancHistory}>
@@ -10,7 +15,7 @@ function TrancHistory() {
             <div className={styles.TrancHistoryBox}>
 <div className={styles.Buttons}> 
       <p>hsa23@gmail.com</p>
-      <button className={styles.Logout}>Logout</button>
+      <button className={styles.Logout} onClick={handleLogout}>Logout</button>
       <button className={styles.orderHistory}>Order History</button>
 </div>
             </div>

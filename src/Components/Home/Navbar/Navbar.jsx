@@ -193,8 +193,13 @@ function Navbar() {
               </>
             )}
             {/* Account Button For Check Order History  */}
-            <Link style={{display:"none"}} to={"/TrancHistory"}>
+           {
+            isAuthorized && <>
+            
+            <Link to={"/TrancHistory"}>
             <button>Account</button></Link>
+            </>
+           }
           </div>
         </div>
       </div>
