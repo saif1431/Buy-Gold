@@ -214,13 +214,12 @@ transition: all ease 1s;
       gap: 3.5vw;
 color: #65697B;
 }
-.AccountBtn{
+.btn3{
       background-color: #404c6e;
       border: none;
       outline: none;
       font-size: 1.2vw;
       border-radius: 7px;
-      display: none;
 }
 .menubar{
       display: none;

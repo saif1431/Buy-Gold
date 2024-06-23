@@ -196,7 +196,7 @@ function Navbar() {
         {
           isAuthorized && <>
           <Link  to={"/TrancHistory"}>
-          <button>Account</button></Link>
+          <button className={styles.btn3}>Account</button></Link>
           </>
         }
           </div>
