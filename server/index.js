@@ -6,16 +6,22 @@ const stripe = require('stripe')('your-stripe-secret-key');
 const paypal = require('@paypal/checkout-server-sdk');
 const auth = require('./auth');
 const app = express();
+const randomstring = require('randomstring');
+const sgMail = require('@sendgrid/mail');
+require('dotenv').config();
 
+app.use(express.json());
 app.use(bodyParser.json());
 app.use(cors());
 
 mongoose
-.connect("mongodb+srv://sherazmoiz9:FMGxSK0XXAOR42S0@cluster0.l6qfsrz.mongodb.net/", {
+.connect("mongodb+srv://sherazmoiz9:FMGxSK0XXAOR42S0@cluster0.l6qfsrz.mongodb.net/buygold", {
 })
 .then((data) => {
   console.log(`Mongodb connected with server: ${data.connection.host}`);
 });
+const sendGridApiKey = process.env.SENDGRID_API_KEY;
+sgMail.setApiKey(sendGridApiKey);
 
 const User = mongoose.model('User', new mongoose.Schema({
   email: String,
@@ -135,6 +141,44 @@ app.post('/support', async (req, res) => {
   await newMessage.save();
   res.status(201).send({ message: 'Message received' });
 });
+
+// forget-password endpoint
+
+app.post('/forget-password', async (req, res) => {
+  const { email } = req.body;
+  console.log(email);
+
+  try {
+    const user = await User.findOne({ email });
+
+    if (!user) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+
+    const newPassword = randomstring.generate(10);
+
+    const updateResult = await User.updateOne({ email }, { password: newPassword });
+
+    if (updateResult.matchedCount === 0) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+
+    const msg = {
+      to: email,
+      from: 'moiz77131@gmail.com',
+      subject: 'New Password for Buy-Gold',
+      text: `Your new password for Buy-Gold  is: ${newPassword}`,
+    };
+
+    await sgMail.send(msg);
+    console.log('Email sent');
+    res.status(200).json({ message: 'New password sent to your email' });
+  } catch (err) {
+    console.error(err.toString());
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
+
 
 app.listen(5000, () => {
   console.log('Server running on port 5000');
