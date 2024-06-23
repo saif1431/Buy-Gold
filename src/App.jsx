@@ -7,10 +7,13 @@ import FAQ from './Components/FAQ/FAQ';
 import Support from './Components/Support/Support';
 import TrancHistory from './Components/Account/TransactionHistory.jsx';
 import StripeForm from './Components/Forms/StripeForm/StripeForm.jsx';
-
+import { Elements } from '@stripe/react-stripe-js';
+import { loadStripe } from '@stripe/stripe-js';
+const stripePromise = loadStripe("pk_test_51NSNJfK5jFmIR9ElOjj4STpJI0aVKMH0i03dG5KM4cuLUvpV31hc8UMpE1DlJiYPxip50pLsl3hbezYSMipsdXJU007BaEo7ni");
 function App() {
   return (
-    <Router>
+    <Elements stripe={stripePromise}>
+      <Router>
     <Routes>
       <Route path="/" element={<Home />}/>
       <Route path="/BuyRS3Gold" element={<BuyRS3Gold />}/>
@@ -22,6 +25,8 @@ function App() {
      
     </Routes>
   </Router>
+    </Elements>
+
   )
 }
 

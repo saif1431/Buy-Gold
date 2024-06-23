@@ -1,104 +1,134 @@
-import React from 'react'
-import styles from './StripeForm.module.css'
-import Logo from '../../../images/twitters.png'
-import visa from '../../../images/visa.svg'
-import gci from '../../../images/gci.svg'
-import ubt from '../../../images/ubt.svg'
-import wlt from '../../../images/wlt.svg'
-import skrill from '../../../images/skrill.svg'
+import React, { useState, useEffect } from 'react';
+import axios from 'axios'; // Make sure axios is imported
+import styles from './StripeForm.module.css';
+import Logo from '../../../images/twitters.png';
+import visa from '../../../images/visa.svg';
+import gci from '../../../images/gci.svg';
+import ubt from '../../../images/ubt.svg';
+import wlt from '../../../images/wlt.svg';
+import skrill from '../../../images/skrill.svg';
+import {
+  CardNumberElement,
+  CardCvcElement,
+  CardExpiryElement,
+  useStripe,
+  useElements,
+} from "@stripe/react-stripe-js";
 
 function StripeForm() {
+  const stripe = useStripe();
+  const elements = useElements();
+  const [clientSecret, setClientSecret] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+  const [isPaymentLoading, setIsPaymentLoading] = useState(false);
+const payment = JSON.parse(localStorage.getItem('paymentDetails'));
+  useEffect(() => {
+    const fetchClientSecret = async () => {
+      try {
+        const config = {
+          headers: {
+            "Content-Type": "application/json"
+          }
+        };
+        
+        const paymentData = {
+          amount: 5000,
+        };
+        
+        const { data } = await axios.post(`http://127.0.0.1:5000/create-payment-intent`, paymentData, config);
+        setClientSecret(data.clientSecret);
+      } catch (error) {
+        setErrorMessage('Failed to initialize payment');
+      }
+    };
+
+    fetchClientSecret();
+  }, []);
+
+  const handlePayment = async (e) => {
+    e.preventDefault();
+    if (isPaymentLoading) return;
+
+    setIsPaymentLoading(true);
+    if (!stripe || !elements) {
+      setErrorMessage('Stripe has not loaded yet.');
+      setIsPaymentLoading(false);
+      return;
+    }
+
+    const result = await stripe.confirmCardPayment(clientSecret, {
+      payment_method: {
+        card: elements.getElement(CardNumberElement),
+        billing_details: {
+          name: localStorage.getItem('rsName'),
+          email: localStorage.getItem('email'),
+          address: {
+            country: "US"
+          }
+        }
+      }
+    });
+
+    setIsPaymentLoading(false);
+
+    if (result.error) {
+      setErrorMessage(result.error.message);
+    } else {
+      alert("Payment Successful");
+    }
+  };
+
   return (
     <div>
       <div className={styles.StripeForm}>
-            <div className={styles.StripeFormBox}>
-<div className={styles.StripeFormBox1}>
-<img src={Logo} alt="" />
-<div className={styles.text}>
-      <h3>piegp.com</h3>
-      <p><span>Order Number:</span>00HU676</p>
-      <p><span>Total:</span>3743USD</p>
-</div>
-</div>
-<hr />
-
-<form action="">
-      <div className={styles.input1}>
-            <label htmlFor="">Card Number*</label>
-            <input type="text" />
-      </div>
-      <div className={styles.input2}>
-            <label htmlFor="">Cardholder name*</label>
-            <input type="text" />
-      </div>
-      <div className={styles.input3}>
-            <label htmlFor="">Expires*</label>
-            <select name="" id="">
-                  <option value="">Month</option>
-                  <option value="">01</option>
-                  <option value="">02</option>
-                  <option value="">03</option>
-                  <option value="">04</option>
-                  <option value="">05</option>
-                  <option value="">06</option>
-                  <option value="">07</option>
-                  <option value="">08</option>
-                  <option value="">09</option>
-                  <option value="">10</option>
-                  <option value="">11</option>
-                  <option value="">12</option>
-            </select>
-            <select name="" id="">
-                  <option value="">Year</option>
-                  <option value="">2024</option>
-                  <option value="">2025</option>
-                  <option value="">2026</option>
-                  <option value="">2027</option>
-                  <option value="">2028</option>
-                  <option value="">2029</option>
-                  <option value="">2030</option>
-                  <option value="">2031</option>
-                  <option value="">2032</option>
-                  <option value="">2033</option>
-                  <option value="">2034</option>
-                  <option value="">2035</option>
-                  <option value="">2036</option>
-                  <option value="">2037</option>
-                  <option value="">2038</option>
-                  <option value="">2039</option>
-                  <option value="">2040</option>
-                  <option value="">2041</option>
-                  <option value="">2042</option>
-            </select>
-      </div>
-      <div className={styles.captcha}>
-            <label htmlFor="">CVV2/CVC2/CAV2*</label>
-            <input  type="text" />
-      </div>
-      <div className={styles.buttons}>
-            <button>Pay</button>
-            <button>Cancel</button>
-      </div>
-</form>
-<hr />
-<div className={styles.cards}>
-      <h1>Unlimit</h1>
-<div className={styles.card}>
-      <img src={visa} alt="" />
-      <img src={gci} alt="" />
-      <img src={visa} alt="" />
-      <img src={visa} alt="" />
-       <img src={skrill} alt="" />
-</div>
-</div>
-<div className={styles.footer}>
-      <h4>Contact US</h4>
-      <p> © 2009-2024 Unlimit</p>
-</div>
+        <div className={styles.StripeFormBox}>
+          <div className={styles.StripeFormBox1}>
+            <img src={Logo} alt="Logo" />
+            <div className={styles.text}>
+              <h3>piegp.com</h3>
+              <p><span>Order Number:</span> 00HU676</p>
+              <p><span>Total:</span> {payment.price} USD</p>
             </div>
+          </div>
+          <hr />
+          <form onSubmit={handlePayment}>
+            <div className={styles.input1}>
+              <label htmlFor="card-number">Card Number*</label>
+              <CardNumberElement id="card-number" />
+            </div>
+            <div className={styles.captcha}>
+              <label htmlFor="card-cvc">CVV2/CVC2/CAV2*</label>
+              <CardCvcElement id="card-cvc" />
+            </div>
+            <div className={styles.captcha}>
+              <label htmlFor="card-expiry">Expires In</label>
+              <CardExpiryElement id="card-expiry" />
+            </div>
+            <div className={styles.buttons}>
+              <button type="submit" disabled={isPaymentLoading}>Pay</button>
+              <button type="button">Cancel</button>
+            </div>
+            {errorMessage && <p className={styles.error}>{errorMessage}</p>}
+          </form>
+          <hr />
+          <div className={styles.cards}>
+            <h1>Unlimit</h1>
+            <div className={styles.card}>
+              <img src={visa} alt="visa" />
+              <img src={gci} alt="gci" />
+              <img src={visa} alt="visa" />
+              <img src={ubt} alt="ubt" />
+              <img src={skrill} alt="skrill" />
+            </div>
+          </div>
+          <div className={styles.footer}>
+            <h4>Contact Us</h4>
+            <p>© 2009-2024 Unlimit</p>
+          </div>
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default StripeForm
+export default StripeForm;

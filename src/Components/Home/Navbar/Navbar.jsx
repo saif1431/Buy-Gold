@@ -11,9 +11,6 @@ import SignUp from '../../Forms/SignUp/SignUp.jsx';
 import GiftForm from '../../Forms/GiftCardForm/GiftForm.jsx';
 import TrancHistory from '../../Account/TransactionHistory.jsx';
 
-
-
-
 function Navbar() {
   const leftMenuRef = useRef(null);
   const [isLoginOpen, setIsLoginOpen] = useState(false);
@@ -22,6 +19,11 @@ function Navbar() {
   const loginRef = useRef(null);
   const signUpRef = useRef(null);
   const redeemRef = useRef(null);
+  const [isAuthorized, setIsAuthorized] = useState(false); // Add this state
+  useEffect(() => {
+  setIsAuthorized(localStorage.getItem('isAuthorized') === 'true');
+  }, [])
+  
 
   function handleMenu() {
     if (leftMenuRef.current) {
@@ -125,8 +127,12 @@ function Navbar() {
         <RxCross1 onClick={handleClose} className={styles.cros} />
 
         <div className={styles.leftnavItems2}>
-          <button onClick={openLogin} className={styles.btn1}>LOG IN</button>
-          <button onClick={openSignUp} className={styles.btn2}>SIGN UP</button>
+          {!isAuthorized && (
+            <>
+              <button onClick={openLogin} className={styles.btn1}>LOG IN</button>
+              <button onClick={openSignUp} className={styles.btn2}>SIGN UP</button>
+            </>
+          )}
         </div>
         <hr />
         <div className={styles.leftNavLinks}>
@@ -137,7 +143,7 @@ function Navbar() {
         <div className={styles.leftNavLinks2}>
           <Link to={"/FAQ"} className={styles.leftLinks}>FAQ</Link>
           <Link to={"/Support"} className={styles.leftLinks}>Support</Link>
-          <Link  className={styles.leftLinks}>Blog</Link>
+          <Link className={styles.leftLinks}>Blog</Link>
           <Link className={styles.leftLinks} onClick={openRedeem}>Redeem Gift Card</Link>
         </div>
         <div className={styles.leftnavrating}>
@@ -180,9 +186,12 @@ function Navbar() {
             <Link to={"/SellGold"} className={styles.navLinks}>Sell Gold</Link>
           </div>
           <div className={styles.navItems2}>
-            <button onClick={openLogin} className={styles.btn1}>LOG IN</button>
-            <button onClick={openSignUp} className={styles.btn2}>SIGN UP</button>
-
+            {!isAuthorized && (
+              <>
+                <button onClick={openLogin} className={styles.btn1}>LOG IN</button>
+                <button onClick={openSignUp} className={styles.btn2}>SIGN UP</button>
+              </>
+            )}
             {/* Account Button For Check Order History  */}
             <Link style={{display:"none"}} to={"/TrancHistory"}>
             <button>Account</button></Link>
