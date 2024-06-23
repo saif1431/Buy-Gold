@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios'; // Make sure axios is imported
+import axios from 'axios';
 import styles from './StripeForm.module.css';
 import Logo from '../../../images/twitters.png';
 import visa from '../../../images/visa.svg';
@@ -21,7 +21,8 @@ function StripeForm() {
   const [clientSecret, setClientSecret] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   const [isPaymentLoading, setIsPaymentLoading] = useState(false);
-const payment = JSON.parse(localStorage.getItem('paymentDetails'));
+  const payment = JSON.parse(localStorage.getItem('paymentDetails'));
+
   useEffect(() => {
     const fetchClientSecret = async () => {
       try {
@@ -78,6 +79,25 @@ const payment = JSON.parse(localStorage.getItem('paymentDetails'));
     }
   };
 
+  const CARD_ELEMENT_OPTIONS = {
+      style: {
+        base: {
+          color: '#32325d',
+          fontFamily: 'Arial, sans-serif',
+          fontSmoothing: 'antialiased',
+          fontSize: '16px',
+          '::placeholder': {
+            color: '#aab7c4',
+          },
+        },
+        invalid: {
+          color: '#fa755a',
+          iconColor: '#fa755a',
+        },
+      },
+    };
+    
+
   return (
     <div>
       <div className={styles.StripeForm}>
@@ -94,15 +114,15 @@ const payment = JSON.parse(localStorage.getItem('paymentDetails'));
           <form onSubmit={handlePayment}>
             <div className={styles.input1}>
               <label htmlFor="card-number">Card Number*</label>
-              <CardNumberElement id="card-number" />
+              <p><CardNumberElement id="card-number" options={CARD_ELEMENT_OPTIONS} /></p>
             </div>
             <div className={styles.captcha}>
               <label htmlFor="card-cvc">CVV2/CVC2/CAV2*</label>
-              <CardCvcElement id="card-cvc" />
+              <p><CardCvcElement id="card-cvc" options={CARD_ELEMENT_OPTIONS} /></p>
             </div>
             <div className={styles.captcha}>
               <label htmlFor="card-expiry">Expires In</label>
-              <CardExpiryElement id="card-expiry" />
+              <p><CardExpiryElement id="card-expiry" options={CARD_ELEMENT_OPTIONS} /></p>
             </div>
             <div className={styles.buttons}>
               <button type="submit" disabled={isPaymentLoading}>Pay</button>

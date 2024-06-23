@@ -83,7 +83,7 @@ form input{
       justify-content: center;
       gap: 1vw;
       margin-top: 2vw;
-      margin-left: 12vw;
+      margin-left: 0vw;
 }
 .buttons button{
       padding: 1vw 4vw;
@@ -102,11 +102,35 @@ form input{
       background-color: #DFDFDF;  
 }
 
+.StripeElement {
+      width: 100%; /* Full width of the parent container */
+      height: 40px; /* Example height */
+      padding: 10px; /* Example padding */
+      border: 1px solid #ccc; /* Example border */
+      border-radius: 4px; /* Example border radius */
+      margin-bottom: 10px; /* Example margin */
+    }
+    .input1 p{
+      border: 1px solid #999;
+ width: 25vw;
+ height: 7vh;
+ margin-top: 1vw;
+
+    }
+    .captcha p{
+      margin-top: 1vw;
+      border: 1px solid #999;
+ width: 25vw;
+ height: 7vh;
+
+    }
 .cards{
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 2vw;
+}#card-number{
+      background-color: red;
 }
 .card{
       display: flex;
@@ -140,6 +164,18 @@ form input{
       padding: 2vw;
       /* flex-direction: column; */
 }
+.input1 p{
+      border: 1px solid #999;
+ width: 75vw;
+ height: 7vh;
+ margin-top: 1vw;
+    }
+.captcha p{
+      border: 1px solid #999;
+ width: 75vw;
+ height: 7vh;
+ margin-top: 1vw;
+    }
 .StripeFormBox1{
       display: flex;
       flex-direction: column;
