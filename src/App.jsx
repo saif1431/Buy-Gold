@@ -5,6 +5,8 @@ import BuyRS3Gold from './Components/Buy RS3 Gold/BuyRS3Gold';
 import SellGold from './Components/Sell Gold/SellGold';
 import FAQ from './Components/FAQ/FAQ';
 import Support from './Components/Support/Support';
+import TrancHistory from './Components/Account/TransactionHistory.jsx';
+import StripeForm from './Components/Forms/StripeForm/StripeForm.jsx';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Route path="/SellGold" element={<SellGold />}/>
       <Route path="/FAQ" element={<FAQ />}/>
       <Route path="/Support" element={<Support />}/>
+      <Route path="/TrancHistory" element={<TrancHistory />}/>
+      <Route path="/StripeForm" element={<StripeForm />}/>
      
     </Routes>
   </Router>

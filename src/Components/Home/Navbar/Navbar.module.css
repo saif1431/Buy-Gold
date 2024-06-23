@@ -1,7 +1,7 @@
 .navbar{
       width: 100vw;
       height: 17vh;
-      background-color:#07078f;
+      background-color:#2F354D;
       position: fixed;
       top: 0;
    z-index: 1000;
@@ -12,7 +12,7 @@
       left: 30%;
       width: 70vw;
       height: 2.4vw;
-      background-color:#01016bbf;
+      background-color:#3F4866;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -24,9 +24,9 @@
       position: absolute;
       width: 20vw;
       height: 100vh;
-      background-color: #00004D;
+      background-color: #2F354D;
       transform: translateX(-100%);
-      z-index: 10000;
+      /* z-index: 10000; */
 }
 .cros{
       font-size: 7vw;
@@ -49,25 +49,25 @@
       color: #8891b7;  
 }
 .leftnavItems2 .btn1{
-      background-color: #01016bbf;
+      background-color: #2F354D;
       border: none;
       outline: none;
       padding: 3vw 2vw;
 }
 .leftnavItems2 .btn1:hover{
-      background-color: #01016bbf;
+      background-color: #2F354D;
       border-radius: 5px;
       padding: 1.2vw 1.5vw;
 }
 .leftnavItems2 .btn2{
-      background-color: #01016bbf;
+      background-color: #2F354D;
       border: none;
       outline: none;
       border-radius: 5px;
       padding: 3vw 1.5vw;
 }
 .leftnavItems2 .btn2:hover{
-      background-color: #01016bec;
+      background-color: #2F354D;
 }
 
 .leftNavLinks{
@@ -86,7 +86,7 @@
       flex-direction: column;
       gap: 6vw;
       padding: 5vw;
-      margin-top: 8vw;
+      margin-top: 0vw;
 }
 
 .leftnavrating{
@@ -113,9 +113,9 @@
       align-items: center;
       gap: 2vw;
 }
-.topnav1 Link{
+/* .topnav1 Link{
       color: red;
-}
+} */
 .topnav2{
       display: flex;
       gap: .2vw;
@@ -128,6 +128,39 @@
      
       color: white;
 }
+.navbar {
+      position: relative;
+      z-index: 1;
+    }
+    
+    .blueOverlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Blue background with opacity */
+      z-index: 999; /* Ensure it covers everything else */
+    }
+    
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000; /* Ensure it is above the overlay */
+    }
+    
+    .modalContent {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      z-index: 1001;
+    }
 .links{
       font-size: 1vw;
      color: #8891b7;
@@ -147,11 +180,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      /* z-index: ; */
 }
 
 .logo img{
+      z-index: 1000;
       width: 43%;
       height: 45%;
+      z-index: 0;
 }
 .navItems{
       width: 100%;
@@ -203,19 +239,19 @@ color: #65697B;
       outline: none;
 }
 .navItems2 .btn1:hover{
-      background-color: #01016bbf;
+      background-color: #343b5888;
       border-radius: 5px;
       padding: 1.2vw 1.5vw;
 }
 .navItems2 .btn2{
-      background-color: #01016bbf;
+      background-color: #373F5A;
       border: none;
       outline: none;
       border-radius: 5px;
       padding: 1.2vw 1.5vw;
 }
 .navItems2 .btn2:hover{
-      background-color: #01016bec;
+      background-color: #404c6e;
 }
 
 

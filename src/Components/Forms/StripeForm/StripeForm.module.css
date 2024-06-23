@@ -1,0 +1,206 @@
+
+
+.StripeForm{
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color:#DFDFDF;
+      color: #000;
+      font-size: 1.2vw;
+      padding: 2vw;
+}
+.StripeFormBox{
+      width: 90%;
+      height: 100%;
+      background-color: #FFFFFF;
+      margin-top: 8vw;
+      padding: 2vw;
+}
+.StripeFormBox1{
+      display: flex;
+      align-items: center;
+}
+.StripeFormBox1 img{
+      width: 10%;
+      height: 10%;
+}
+
+.text {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 1vw;
+margin:0 auto;
+}
+.text h3{
+      font-size: 2.5vw;
+      font-weight: 400;
+}
+.text span{
+      color: #000;
+      font-weight: 600;
+}
+hr{
+      border: 1px solid #DFDFDF;
+}
+
+form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+margin-top: 3vw;
+gap: 2vw;
+}
+form input{
+      /* width: 0%; */
+      padding: 1vw 7vw;
+      margin-left: 2vw;
+}
+.input1 input{
+      margin-left: 4vw;
+}
+.input3{
+      margin-left: 2vw;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      gap: 1vw;
+}
+.input3 label{
+      margin-right: 5vw;
+      margin-top: 1VW;
+}
+.input3 select{
+      padding: 1vw 3.5vw;
+      font-size: 1.3vw;
+}
+.buttons{
+      display: flex;align-items: center;
+      justify-content: center;
+      gap: 1vw;
+      margin-top: 2vw;
+      margin-left: 12vw;
+}
+.buttons button{
+      padding: 1vw 4vw;
+      font-size: 1.3vw;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+}
+.buttons button:nth-child(1){
+      background-color: #b5e426;
+      color: #fff;
+}
+
+.buttons button:nth-child(2){       
+      
+      background-color: #DFDFDF;  
+}
+
+.cards{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2vw;
+}
+.card{
+      display: flex;
+      align-items: center;
+      gap: .5vw;
+}
+.footer{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2vw;
+}
+
+@media screen and (width > 300px) and (width < 768px){
+.StripeForm{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color:#DFDFDF;
+      color: #000;
+      font-size: 3vw;
+      padding: 2vw;
+}
+.StripeFormBox{
+      width: 90%;
+      height: 100%;
+      background-color: #FFFFFF;
+      margin-top: 8vw;
+      padding: 2vw;
+      /* flex-direction: column; */
+}
+.StripeFormBox1{
+      display: flex;
+      flex-direction: column;
+}
+.StripeFormBox1 img{    
+      width: 30%;
+      height: 30%;      
+}
+.text h3{
+      font-size: 6vw;
+}
+form{
+      margin-top: 8vw;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8vw;
+}
+form input{
+      width:95%;
+      padding: 3vw 10vw;
+}
+.input1{
+      margin-left: 0;
+}
+form label{
+      font-size: 4vw;
+      margin-left: 2vw;
+}
+.input3{
+      text-align: start;
+      margin-bottom: 4vw;
+margin-left: 0;
+      width: 95%;
+      flex-direction: column;
+      padding: 1vw;
+}
+.input3 select{
+      padding: 3vw 4vw; 
+      font-size: 4vw;
+}
+.captcha{
+      width: 95%;
+      padding: 1vw;
+}
+.buttons{
+      margin-left: 0;
+      /* margin-top: 8vw; */
+      gap: 4vw;
+}
+.buttons button{
+font-size: 5vw;
+      padding: 3vw 6vw;
+
+}
+.cards{
+      flex-direction: column;
+      gap:1vw;
+}
+.footer{
+      margin-top: 2vw;
+      font-size: 4vw;
+}
+}

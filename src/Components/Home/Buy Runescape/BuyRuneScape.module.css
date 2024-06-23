@@ -1,12 +1,12 @@
 .buyRuneScape{
       width: 100vw;
-      height: 40vh;
-      background-color: #00004D;
+      height: 50vh;
+      background-color: #282D44;
       padding: 5vw;
       display: flex;
       flex-direction: column;
     gap: 1.5vw;
-    margin-top: 8vw;
+    margin-top: 0vw;
 }
 .buyRuneScape h1{
       font-size: 2.4vw;
@@ -18,7 +18,7 @@
 .buyRuneScape button{
       width: 18%;
       padding: 1vw 2vw;
-      background-color: #231bb6;
+      background-color: #1BB67F;
       border: none;
       outline: none;
       color: #fff;
@@ -28,7 +28,7 @@
       transition: all ease 1s;
 }
 .buyRuneScape button:hover{
-       background-color: #271dd7;;
+       background-color: #1cce90;;
 }
 
 @media screen and (width > 300px) and (width < 768px) {

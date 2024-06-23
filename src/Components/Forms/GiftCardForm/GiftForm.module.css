@@ -4,15 +4,15 @@
       left: 50%;
       transform: translate(-50%, -50%);
       width: 90%;
-      max-width: 500px;
-      background: #00004D;
+      max-width: 400px;
+      background: #2F354D;
       border-radius: 8px;
       box-shadow: 0px 0px 3px 3px #555;
       z-index: 1000;
     }
     
     .redeemGiftCardContent {
-      padding: 20px;
+      padding: 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -43,7 +43,7 @@
     .fields input{
       width: 80%;
       padding: 1.2vw;
-      background-color: #07078F;
+      background-color: #282E44;
       border: none;
       outline: none;
       border-radius: 5px;
@@ -52,7 +52,7 @@
     .fields button{
       padding: 1.2vw;
       width: 80%;
-      background-color: #0a0a68;
+      background-color: #24D093;
       border: none;
       outline: none;
       border-radius: 5px;
@@ -60,7 +60,7 @@
       cursor: pointer;
     }
     .fields button:hover{
-      background-color: #0a0a687b;
+      background-color: #24d094;
     }
     .inputBox {
       display: flex;

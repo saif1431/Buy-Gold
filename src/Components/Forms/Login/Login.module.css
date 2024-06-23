@@ -3,7 +3,7 @@
       position: fixed;
       width: 57vw;
       height: 90vh;
-      background-color:#00004D;
+      background-color:#2F354D;
       border-radius: 10px;
       top: 5%;
       left: 20%;
@@ -18,13 +18,13 @@
 .LoginSide1{
 width: 50%;
 height: 100%;
-background-color:#00004D;
+background-color:#303752;
 border-right: 1px solid #444;
 }
 .LoginSide2{
 width: 50%;
 height: 100%;
-background-color: #00004D;
+background-color: #2F354D;
 }
 .logo{
       display: flex;
@@ -94,7 +94,7 @@ background-color: #00004D;
       border: none;
       outline: none;
       border-radius: 4px;     
-      background-color: #07078f;
+      background-color: #282E44;
       color: #fff;
       border: 1px solid #444;
 }
@@ -105,7 +105,7 @@ background-color: #00004D;
       border: none;
       outline: none;
       border-radius: 4px;     
-      background-color: #231bb6;
+      background-color: #24D093;
       color: #fff;
       border: 1px solid #444;
       cursor: pointer;
@@ -113,7 +113,7 @@ background-color: #00004D;
 }
 
 .inputBox button:hover{
-      background-color: #1d1791;
+      background-color: #24D095;
 }
 .JumpReg{
       display: flex;
@@ -135,19 +135,23 @@ font-size: 1.2vw;
 
 @media screen and (width > 300px) and (width < 768px){
       .Login{
-            display: flex;
+            position: fi;
+            top: 0%;
+            left: 13%;
+            /* right: 30%; */
+            /* display: flex;
             align-items: center;
-            justify-content: center;
-            width: 70%;
+            justify-content: center; */
+            width: 75%;
             height: fit-content;
-            margin-top: 50vw;
+            margin-top: 30vw;
             padding: 5vw 2vw;
       }
       .LoginSide1{
             display: none;
       }
       .LoginSide2{
-            width: 90%;
+            width: 100%;
       }
       .cross{
             font-size: 5vw;

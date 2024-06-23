@@ -1,25 +1,28 @@
 
-
+html, body{
+      overflow-x: hidden;
+ }
 .mainContent{
       width: 100vw;
-      display: flex;
       height: fit-content;
+      display: flex;
       /* align-items: center; */
       justify-content: space-evenly;
-      margin-top: 13vw;
+      margin-top: 8vw;
 }
 
 .content1{
       width: 45vw;
       height: 50vh;
       /* background-color:; */
-      padding: 4vw;    
+      padding: 4vw;  
+      margin-top: 5vw;  
 }
 .content1 .heading1{
       font-size: 2.7vw;
 }
 .content1 .heading2{
-      font-size: 5vw;
+      font-size: 4vw;
       color: #FDD964;
       font-weight: bold;
 }
@@ -41,7 +44,7 @@
 }
 .mainContentBtn1{
       overflow: hidden;
-      background-color: #01016bbf;
+      background-color: #282D44;
       padding: 1vw 1.5vw;
       border: 1px solid #808cbd3e;
       border-radius: 5px;
@@ -49,7 +52,7 @@
       color: #F9D635;
 }
 .mainContentBtn1 span{
-      background-color: #271dd7;
+      background-color: #3F4866;
       padding: .7vw 1vw;
       border-radius: 7px;
       margin-left: 2vw;
@@ -65,35 +68,37 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-top: 5vw;
       /* gap: .5vw; */
 }
 .content2Btns1{
       width: 40%;
       height: 100%;
-      background-color: #01016bbf;
+      background-color: #373F5A;
       display: flex;
       align-items: center;
       justify-content: center;
       border-radius: 5px;
+       
 }
 .content2Btns2{
       width: 40%;
       height: 100%;
-      background-color: #01016bbf;
+      background-color: #24293F;
       display: flex;
       align-items: center;
       justify-content: center;
       border-radius: 5px;
-      border: 1.5px solid #1BB67F;  
+      border: 1.5px solid #1BB67F;
 }
 .payments{
       width: 80%;
-      height: 100%;
-      background-color: #01016bbf;
+      height: fit-content;
+      background-color: #2F354D;
       margin: 0 auto;
       margin-top: 2vw;
       border-radius: 8px;
-      border: 1px solid #999;
+      border: 1px solid #333;
 }
 .totalPrice{
       display: flex;
@@ -130,7 +135,7 @@
 }
 .amountInputs input{
       /* padding: 1vw 1vw; */
-      background-color: #07078f;
+      background-color: #282E44;
       border: none;
       outline: none;
       border-radius: 5px;
@@ -138,10 +143,10 @@
 }
 .amountSpan{
       padding: 1vw .3vw;
-      background-color: #07078f;
+      background-color: #282E44;
 }
 .amountSpan span{
-      background-color: #271dd7;
+      background-color: #3F4866;
       padding: .7vw .8vw;
       border-radius: 5px;
 }
@@ -160,7 +165,7 @@
 }
 .runescape input{
       padding: 1.3vw 1.5vw;
-      background-color: #07078f;
+      background-color: #282E44;
       border: none;
       outline: none;
       border-radius: 5px;
@@ -188,18 +193,83 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 }
+.CardsSkip{
+width: 100%;
+height: 10%;
+/* background-color: green; */
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.CardsSkips{
+width: 100%;
+height: 10%;
+/* background-color: green; */
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+.CardsSkip,
+.CardsSkips {
+  display: none;
+}
+
+.CardsSkip.show,
+.CardsSkips.show {
+  display: flex;
+}
+
+
 .visa1{
       display: flex;
       align-items: center;
       justify-content: center;
       width: 30% ;
       height: 7vh;
-      background-color: #07078f;
+      background-color: #373F5A;
       border-radius: 6px;
+      transition: all ease 1s;
 }
-
+.visaMore{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30% ;
+      height: 7vh;
+      background-color: #282E44;
+      border-radius: 6px;
+      transition: all ease 1s;
+}
+.visaMore:hover{
+      border: 1px solid #1BB67F; 
+}
+.visa1:hover{
+      border: 1px solid #1BB67F;
+}
+.selectedCard {
+      border: 2px solid green;
+      position: relative;
+    }
+    
+    .tickMark {
+      display: none;
+      position: absolute;
+      top: -10%;
+      left: 95%;
+      font-size: 18px;
+      color: #fff;
+      background: #1BB67F;
+      border-radius: 50%;
+      transition: all ease 1s;
+    }
+    
+    .selectedCard .tickMark {
+      display: inline-block;
+    }
+    
+    
 .bank img{
-      background-color:#07078f;
+      /* background-color:#07078f; */
       border-radius: 5px;
       /* padding: 1vw 1vw; */
 
@@ -213,7 +283,7 @@ justify-content: space-between;
 .buyButton button{
       width: 90%;
       padding: 1vw 0;
-      background-color: #231bb6;
+      background-color: #1BB67F;
       font-size: 1.4vw;
       color: #fff;
       border: none;
@@ -224,9 +294,7 @@ justify-content: space-between;
       justify-content: center;
       gap: .3vw;
 }
-.buyButton button:hover{
-      background-color: #271dd7;
-}
+
 .whyPie{
       display: flex;
       flex-direction: column;
@@ -247,11 +315,17 @@ justify-content: space-between;
 @media screen and (width > 300px) and (width < 768px){
       .mainContent{
             flex-direction: column;
+            /* padding: 2vw 3vw; */
       }   
       .content1{
             width: 90%;
             height: 20vh;
-            margin-top:20vw;
+            margin-top: 24vw;
+      }
+      .payments{
+            overflow-x: hidden;
+            width: 90%;
+            height: fit-content;
       }
       .content1 .heading1{
             font-size: 5vw;

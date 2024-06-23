@@ -1,9 +1,43 @@
-.VisaContainer{
-      width: 100vw;
-      height: 10vh;
-      background-color: #01016bbf;
+.VisaContainer {
       display: flex;
+      justify-content: space-around;
       align-items: center;
-      justify-content: space-evenly;   
-}
+      flex-wrap: wrap;
+      padding: 20px;
+      margin-top: 5vw;
+    }
+    
+    .visaImage {
+      margin: 10px;
+      max-width: 100px;
+    }
+    
+    .slider {
+      /* margin-top: 2vw; */
+      padding: 20px;
+    }
+    
+    .sliderItem {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .sliderImage {
+      margin: 10px;
+      max-width: 80px;
+    }
+    
+    /* Custom arrow styles */
+    .arrow {
+      display: block;
+      opacity: 0.75;
+    }
+    
+    @media (max-width: 768px) {
+      .arrow {
+        width: 15%;
+      }
 
+    }
+    

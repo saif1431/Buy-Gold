@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import style from './BuyRS3.module.css';
 import svg1 from '../../../images/svg1.svg';
 import svg2 from '../../../images/svg2.svg';
-import { CiShoppingCart } from 'react-icons/ci';
+import { CiShoppingCart } from "react-icons/ci";
+import { SiTicktick } from "react-icons/si";
 import bankCard from '../../../images/bankcard.svg';
 import gci from '../../../images/gci.svg';
 import psc from '../../../images/psc.svg';
@@ -16,32 +17,18 @@ import pwy from '../../../images/pwy.svg';
 import buy from '../../../images/buy.svg';
 
 function HomeContent() {
-  const PricePer1Amount = 0.19;
-  const [amount, setAmount] = useState(0);
-  const [totalPrice, setTotalPrice] = useState(0);
+  const [selectedCard, setSelectedCard] = useState(null);
+  const [showMore, setShowMore] = useState(false);
 
-  // Update totalPrice when amount changes
-  useEffect(() => {
-    const calculatedPrice = amount * PricePer1Amount;
-    setTotalPrice(calculatedPrice.toFixed(2)); 
-    console.log(amount)
-  }, [amount]);
+  const handleCardClick = (card) => {
+    if (card === 'ubt') {
+      setShowMore(!showMore);
+    } else {
+      setSelectedCard(card);
+    }
+  };
 
-  useEffect(() => {
-    const calculatedAmount = totalPrice / PricePer1Amount;
-    setAmount(calculatedAmount.toFixed(2));
-    console.log(amount);
-  }, [totalPrice]);
-
-  const handleAmountChange = (e) => {
-      const inputAmount = parseInt(e.target.value); // Parse input as float
-      setAmount(inputAmount); // Update amount state
-    };
-    
-    const handlePriceChange = (e) => {
-      const inputPrice = parseInt(e.target.value); // Parse input as float
-      setTotalPrice(inputPrice); // Update totalPrice state
-    };
+  const isSelected = (card) => selectedCard === card ? style.selectedCard : '';
 
   return (
     <>
@@ -54,13 +41,15 @@ function HomeContent() {
               <div>
                 <p>OSRS Gold</p>
                 <div className={style.mainContentBtn1}>
-                  $0.19 <span>M</span>
+                  $0.19
+                  <span>M</span>
                 </div>
               </div>
               <div>
                 <p>OSRS Gold</p>
                 <div className={style.mainContentBtn1}>
-                  $0.018 <span>M</span>
+                  $0.018
+                  <span>M</span>
                 </div>
               </div>
             </div>
@@ -83,89 +72,98 @@ function HomeContent() {
                 </div>
                 <div className={style.TotalPrice}>
                   <h6>Total</h6>
-                  <p>${totalPrice}</p>
+                  <p>$0.00</p>
                 </div>
               </div>
 
-              {/* Amount Input Field */}
+              {/* Amount Input Filed--------- */}
               <div className={style.amountInputs}>
                 <div className={style.amount}>
                   <p>Amount</p>
                   <div className={style.amountSpan}>
-                    <input
-                      type="text"
-                      value={amount}
-                      onChange={handleAmountChange}
-                      placeholder="0"
-                    />
+                    <input type="text" placeholder='0' />
                     <span>M</span>
                   </div>
                 </div>
                 <div className={style.price}>
+                  <p>Price</p>
                   <div className={style.amountSpan}>
-                    <input
-                      type="text"
-                      value={totalPrice}
-                      onChange={handlePriceChange}
-                      placeholder="$ 0"
-                    />
+                    <input type="text" placeholder='$ 0' />
                     <span>M</span>
                   </div>
                 </div>
               </div>
 
-              {/* Runescape Field */}
+              {/* Runeescape Field--- */}
               <div className={style.runescape}>
-                <input type="text" placeholder="Runescape Name" />
-                <input type="text" placeholder="Coupon (optional)" />
+                <input type="text" placeholder='Runescape Name' />
+                <input type="text" placeholder='Coupon (optional)' />
               </div>
 
-              {/* Visa Card */}
+              {/* Visa Card--------------- */}
               <div className={style.visaCards}>
                 <h6>Payment Selection</h6>
                 <div className={style.Card}>
                   <div className={style.Cards}>
-                    <div className={style.visa1}>
-                      <img src={bankCard} alt="" />
+                    <div className={`${style.visa1} ${isSelected('bankCard')}`} onClick={() => handleCardClick('bankCard')}>
+                      {selectedCard === 'bankCard' && <SiTicktick className={style.tickMark} />}
+                      <img src={bankCard} alt="Bank Card" />
                     </div>
-                    <div className={style.visa1}>
-                      <img src={gci} alt="" />
+                    <div className={`${style.visa1} ${isSelected('gci')}`} onClick={() => handleCardClick('gci')}>
+                      {selectedCard === 'gci' && <SiTicktick className={style.tickMark} />}
+                      <img src={gci} alt="GCI" />
                     </div>
-                    <div className={style.visa1}>
-                      <img src={psc} alt="" />
-                    </div>
-                  </div>
-                  <div className={style.Cards}>
-                    <div className={style.visa1}>
-                      <img src={wlt} alt="" />
-                    </div>
-                    <div className={style.visa1}>
-                      <img src={klarna} alt="" />
-                    </div>
-                    <div className={style.visa1}>
-                      <img src={ubt} alt="" />
+                    <div className={`${style.visa1} ${isSelected('psc')}`} onClick={() => handleCardClick('psc')}>
+                      {selectedCard === 'psc' && <SiTicktick className={style.tickMark} />}
+                      <img src={psc} alt="PSC" />
                     </div>
                   </div>
                   <div className={style.Cards}>
-                    <div className={style.visa1}>
-                      <img src={ugp} alt="" />
+                    <div className={`${style.visa1} ${isSelected('wlt')}`} onClick={() => handleCardClick('wlt')}>
+                      {selectedCard === 'wlt' && <SiTicktick className={style.tickMark} />}
+                      <img src={wlt} alt="WLT" />
                     </div>
-                    <div className={style.visa1}>
-                      <img src={discover} alt="" />
+                    <div className={`${style.visa1} ${isSelected('klarna')}`} onClick={() => handleCardClick('klarna')}>
+                      {selectedCard === 'klarna' && <SiTicktick className={style.tickMark} />}
+                      <img src={klarna} alt="Klarna" />
                     </div>
-                    <div className={style.visa1}>
-                      <img src={ntl} alt="" />
-                    </div>
-                  </div>
-                  <div className={style.Cards}>
-                    <div className={style.visa1}>
-                      <img src={pwy} alt="" />
+                    <div className={`${style.visa1} ${isSelected('ubt')}`} onClick={() => handleCardClick('ubt')}>
+                      {showMore && <SiTicktick className={style.tickMark} />}
+                      <h4>More</h4>
                     </div>
                   </div>
+                  {showMore && (
+                    <>
+                      <div className={style.CardsSkip + (showMore ? ' ' + style.show : '')}>
+                        <div className={`${style.visa1} ${isSelected('ugp')}`} onClick={() => handleCardClick('ugp')}>
+                          {selectedCard === 'ugp' && <SiTicktick className={style.tickMark} />}
+                          <img src={ugp} alt="UGP" />
+                        </div>
+                        <div className={`${style.visa1} ${isSelected('discover')}`} onClick={() => handleCardClick('discover')}>
+                          {selectedCard === 'discover' && <SiTicktick className={style.tickMark} />}
+                          <img src={discover} alt="Discover" />
+                        </div>
+                        <div className={`${style.visa1} ${isSelected('ntl')}`} onClick={() => handleCardClick('ntl')}>
+                          {selectedCard === 'ntl' && <SiTicktick className={style.tickMark} />}
+                          <img src={ntl} alt="NTL" />
+                        </div>
+                      </div>
+                      <div className={style.CardsSkips + (showMore ? ' ' + style.show : '')}>
+                        <div className={`${style.visa1} ${isSelected('pwy')}`} onClick={() => handleCardClick('pwy')}>
+                          {selectedCard === 'pwy' && <SiTicktick className={style.tickMark} />}
+                          <img src={ubt} alt="PWY" />
+                        </div>
+                        <div className={`${style.visa1} ${isSelected('pwy')}`} onClick={() => handleCardClick('pwy')}>
+                          {selectedCard === 'pwy' && <SiTicktick className={style.tickMark} />}
+                          <img src={pwy} alt="PWY" />
+                        </div>
+                      </div>
+                    </>
+                  )}
                 </div>
               </div>
 
-              {/* BUTTON */}
+              {/* BUTTON---------- */}
               <div className={style.buyButton}>
                 <button>
                   <img src={buy} alt="" />

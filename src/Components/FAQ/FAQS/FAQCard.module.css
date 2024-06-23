@@ -2,7 +2,7 @@
       width: 100%;
       height: fit-content;
       padding: 1vw 10vw;
-      background-color: #01016bbf;
+      background-color: #2F354D;
     }
     
     .heading {
@@ -22,16 +22,17 @@
     .card {
       background-color: 07078f;
       padding: 2vw;
+      background-color: #fff;
       border: 1px solid #dee2e6;
       color: #000;
       border-radius: 5px;
       width: 30vw;
       height: 30vh;
-      color: #fff;
+      color: #000;
     }
     .card h2{
       font-size: 1.3vw;
-      font-weight: 800;
+      font-weight: 500;
     }
     .card h6{
       font-size: 1.1vw;
@@ -53,11 +54,11 @@
     }
     
     .slick-prev:before, .slick-next:before {
-      color: black;
+      color: #fff;
       font-size: 3vw;
     }
     .slick-prev:after, .slick-next:after {
-      color: black;
+      color: #fff;
       font-size: 7vw;
     }
     .footerrating{

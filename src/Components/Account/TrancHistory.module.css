@@ -1,0 +1,129 @@
+
+
+.TrancHistory{
+      width: 100vw;
+      height: 70vh;
+      background-color: #272B41;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 2vw;
+}
+.TrancHistoryBox{
+      width: 20%;
+      height: 80%;
+      background-color: #2F354D;
+      border-radius: 10px;
+      border:  1px solid #717eab;
+}
+.TrancHistoryBox2{
+      width: 70%;
+      height: 80%;
+      background-color: #2F354D;
+      border-radius: 10px;
+      border:  1px solid #717eab;
+}
+.Buttons{
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      /* align-items: center; */
+      gap: 3vw;
+      padding: 1vw;
+}
+.Logout{
+      width: 90%;
+      background-color: #3A415A;
+      border: none;
+      outline: none;
+      color: #717eab;
+      font-size: 1.2vw;
+      padding: 1vw;
+}
+.orderHistory{
+      width: 90%;
+      background-color: #3A415A;
+      border: none;
+      outline: none;
+      color: #717eab;
+      font-size: 1.2vw;
+      padding: 1vw;
+      border: .5px solid #2CF39F;
+}
+
+.TrancHistoryBox2 P{
+      color: #717eab;
+      padding: 2vw;
+      font-size: 1.3vw;
+}
+.TrancHistorydiv{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+.TrancHistorydiv img{
+      width: 10%;
+      height: 10%;
+}
+.TrancHistorydiv button{
+      width: 20%;
+      background-color: #2CF39F;
+      border: none;
+      outline: none;
+      color: #fff;
+      font-size: 1.3vw;
+      padding: 1vw;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all ease 1s;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+.shooping{
+      font-size: 1.7vw;
+}
+
+@media screen and (width > 300px) and (width < 768px){
+      .TrancHistory{
+            flex-direction: column;
+            gap: 4vw;
+            /* margin-top: 5vw; */
+      }
+      .TrancHistoryBox{
+            width: 80%;
+            height: fit-content;
+            padding: 2vw;
+            margin-top: 5vw;
+      }
+      .TrancHistoryBox2{
+            width: 80%;
+            height: fit-content;
+            padding: 3vw;
+      }
+      .Buttons{
+            gap: 4vw;
+            padding: 3vw;
+      }
+      .Logout, .orderHistory{
+            width: 80%;
+            padding: 3vw;
+            font-size: 5vw;
+      }
+      .TrancHistoryBox2 P{
+            font-size: 4vw;
+      }
+      .TrancHistorydiv img{
+            width: 30%;
+            height: 30%;
+      }
+      .TrancHistorydiv button{
+            width: 70%;
+            font-size: 5vw;
+            padding: 3vw;
+      }
+      .shooping{
+            font-size: 5vw;
+      }
+}

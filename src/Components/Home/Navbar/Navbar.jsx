@@ -9,6 +9,10 @@ import { RxCross1 } from 'react-icons/rx';
 import Login from '../../Forms/Login/Login.jsx';
 import SignUp from '../../Forms/SignUp/SignUp.jsx';
 import GiftForm from '../../Forms/GiftCardForm/GiftForm.jsx';
+import TrancHistory from '../../Account/TransactionHistory.jsx';
+
+
+
 
 function Navbar() {
   const leftMenuRef = useRef(null);
@@ -88,11 +92,33 @@ function Navbar() {
     };
   }, [isLoginOpen, isSignUpOpen, isRedeemOpen]);
 
+  const isModalOpen = isLoginOpen || isSignUpOpen || isRedeemOpen;
+
   return (
     <div className={styles.navbar}>
-      {isLoginOpen && <Login onClose={closeLogin} openSignUp={openSignUp} ref={loginRef} />}
-      {isSignUpOpen && <SignUp onClose={closeSignUp} openLogin={openLogin} ref={signUpRef} />}
-      {isRedeemOpen && <GiftForm onClose={closeRedeem} ref={redeemRef} />}
+      {isModalOpen && <div className={styles.blueOverlay}></div>}
+      
+      {isLoginOpen && (
+        <div className={styles.modal}>
+          <div className={styles.modalContent} ref={loginRef}>
+            <Login onClose={closeLogin} openSignUp={openSignUp} />
+          </div>
+        </div>
+      )}
+      {isSignUpOpen && (
+        <div className={styles.modal}>
+          <div className={styles.modalContent} ref={signUpRef}>
+            <SignUp onClose={closeSignUp} openLogin={openLogin} />
+          </div>
+        </div>
+      )}
+      {isRedeemOpen && (
+        <div className={styles.modal}>
+          <div className={styles.modalContent} ref={redeemRef}>
+            <GiftForm onClose={closeRedeem} />
+          </div>
+        </div>
+      )}
 
       {/* Left Menu */}
       <div className={styles.leftMenu} ref={leftMenuRef}>
@@ -156,6 +182,10 @@ function Navbar() {
           <div className={styles.navItems2}>
             <button onClick={openLogin} className={styles.btn1}>LOG IN</button>
             <button onClick={openSignUp} className={styles.btn2}>SIGN UP</button>
+
+            {/* Account Button For Check Order History  */}
+            <Link style={{display:"none"}} to={"/TrancHistory"}>
+            <button>Account</button></Link>
           </div>
         </div>
       </div>

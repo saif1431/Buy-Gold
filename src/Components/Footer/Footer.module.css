@@ -3,7 +3,7 @@
 .footer{
       width: 100vw;
       height: 50vh;
-      background-color:#00004D;
+      background-color:#282D44;
       /* font-size: 3vw; */
       display: flex;
       align-items: center;
@@ -76,7 +76,7 @@
 .bottomFtr{
       width: 100vw;
       height: 7vh;
-      background-color: #01016bbf;
+      background-color: #2C3149;
       display: flex;
       align-items: center;
       justify-content: space-around;

@@ -3,7 +3,7 @@
 .SellGolds{
       width: 100vw;
       height: 100vh;
-      background-color: #01016bbf;
+      background-color: #293049;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -13,7 +13,7 @@
 .SellGoldsBox{
       width: 35%;
       height: fit-content     ;
-      background-color: #01016bbf;
+      background-color: #2F354D;
       border-radius: 5px;
       border: 1px solid #555;
       padding: 1vw 1vw;
@@ -41,7 +41,7 @@
       margin-top: 1vw;
 }
 .picGames1{
-      background-color:#07078f;
+      background-color:#2F354D;
       width: 48%;
       display: flex;
       align-items: center;
@@ -52,7 +52,7 @@
 
 }
 .picGames2{
-      background-color:#07078f;
+      background-color:#292E45;
       width: 48%;
       display: flex;
       align-items: center;
@@ -66,7 +66,7 @@
 }
 .picGameInput{
       width: 85%;
-      background-color:#07078f;
+      background-color:#353D57;
       padding: 0vw 1vw;
       display: flex;
       align-items: center;
@@ -82,7 +82,7 @@
       position: relative;
       /* width: 100%; */
       padding:1.3vw 1vw;
-      background-color:#07078f;
+      background-color:#353D57;
       outline: none;
       box-shadow: none;
       border: none;
@@ -107,7 +107,7 @@
       align-items: center;
       justify-content: center;
       padding: 1vw 2vw;
-      background-color: #231bb6;
+      background-color: #1BB67F;
       color: #fff;
       margin-top: 1.5vw;
       font-size: 1.4vw;
@@ -116,28 +116,14 @@
       outline: none;
     }
     .SellGolds button:hover{
-      background-color: #271dd7;
+      background-color: #1bc78b;
 }
-    
-    .inputbox i {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 2px;
-      background-color:#07078f;
-      border-radius: 4px;
-      transition: 0.5s;
-      pointer-events: none;
-      z-index: 9;
-    }
-    
     .inputbox input:valid ~i,
     .inputbox input:focus ~i {
       height: 44px;
     }
     .m{
-      background-color: #271dd7;
+      background-color: #3F4866;
 padding: .8vw 1vw;
 border-radius: 7px;
     }
