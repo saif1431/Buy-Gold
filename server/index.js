@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const stripe = require('stripe')('your-stripe-secret-key');
+const stripe = require('stripe')('sk_test_51NSNJfK5jFmIR9Eln5LiCa3o4agi3F1w1cNtwK7NhuWs3qvb2lWKVrq2nr7B8oFDSRVpjN56CHx0rWrRve5GpIHZ00B5mUJQ45');
 const paypal = require('@paypal/checkout-server-sdk');
 const auth = require('./auth');
 const app = express();
@@ -45,72 +45,18 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 // Stripe Payment Endpoint
-app.post('/stripe-payment', auth, async (req, res) => {
-  const { amount } = req.body;
-  const userId = req.user.id;
-
+app.post('/create-payment-intent', async (req, res) => {
   try {
-    const paymentIntent = await stripe.paymentIntents.create({
-      amount,
-      currency: 'usd',
-    });
-
-    const payment = new Payment({
-      userId,
-      amount,
-      paymentMethod: 'stripe',
-      paymentId: paymentIntent.id,
-    });
-
-    await payment.save();
-
-    res.send({
-      clientSecret: paymentIntent.client_secret,
-    });
-  } catch (error) {
-    res.status(500).send({ error: error.message });
-  }
-});
-
-// PayPal Payment Endpoint
-const paypalClient = new paypal.core.PayPalHttpClient(
-  new paypal.core.SandboxEnvironment('your-paypal-client-id', 'your-paypal-client-secret')
-);
-
-app.post('/paypal-payment', auth, async (req, res) => {
-  const { amount } = req.body;
-  const userId = req.user.id;
-
-  const request = new paypal.orders.OrdersCreateRequest();
-  request.prefer("return=representation");
-  request.requestBody({
-    intent: 'CAPTURE',
-    purchase_units: [{
-      amount: {
-        currency_code: 'USD',
-        value: amount.toString(),
-      },
-    }],
+  const paymentIntent = await stripe.paymentIntents.create({
+  amount: req.body.amount,
+  currency: 'usd',
   });
-
-  try {
-    const order = await paypalClient.execute(request);
-    const payment = new Payment({
-      userId,
-      amount,
-      paymentMethod: 'paypal',
-      paymentId: order.result.id,
-    });
-
-    await payment.save();
-
-    res.send({
-      orderId: order.result.id,
-    });
+  res.json({ clientSecret: paymentIntent.client_secret });
   } catch (error) {
-    res.status(500).send({ error: error.message });
+  res.status(500).json({ error: error.message });
   }
-});
+ });
+
 
 // User signup endpoint
 app.post('/signup', async (req, res) => {
@@ -131,7 +77,11 @@ app.post('/login', async (req, res) => {
   if (!isMatch) return res.status(400).send({ message: 'Invalid email or password' });
 
   const token = jwt.sign({ id: user._id }, 'secretkey', { expiresIn: '1h' });
-  res.send({ token });
+
+  // Exclude the password from the user data
+  const { password: userPassword, ...userData } = user.toObject();
+
+  res.send({ token, user: userData });
 });
 
 // Support form endpoint

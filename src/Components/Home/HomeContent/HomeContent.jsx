@@ -21,6 +21,8 @@ function HomeContent() {
   const [selectedCard, setSelectedCard] = useState(null);
   const [showMore, setShowMore] = useState(false);
   const [showForm, setShowForm] = useState(false); // State for the pop-up form
+  const [amount, setAmount] = useState('');
+  const [price, setPrice] = useState('');
 
   const handleCardClick = (card) => {
     if (card === 'ubt') {
@@ -33,11 +35,38 @@ function HomeContent() {
   const isSelected = (card) => selectedCard === card ? style.selectedCard : '';
 
   const handleBuyNowClick = () => {
+    const paymentDetails = {
+      amount,
+      price,
+      selectedCard,
+    };
+    localStorage.setItem('paymentDetails', JSON.stringify(paymentDetails));
     setShowForm(true);
   };
 
   const handleCloseForm = () => {
     setShowForm(false);
+  };
+  const handleAmountChange = (e) => {
+    const amountValue = e.target.value;
+    setAmount(amountValue);
+    setPrice((amountValue * 0.19).toFixed(2));
+  };
+
+  const handlePriceChange = (e) => {
+    const priceValue = e.target.value;
+    setPrice(priceValue);
+    setAmount((priceValue / 0.19).toFixed(2));
+  };
+
+  const handleBuyNow = () => {
+    const paymentDetails = {
+      amount,
+      price,
+      selectedCard,
+    };
+    localStorage.setItem('paymentDetails', JSON.stringify(paymentDetails));
+    alert('Payment details stored in localStorage');
   };
 
   return (
@@ -82,7 +111,7 @@ function HomeContent() {
                 </div>
                 <div className={style.TotalPrice}>
                   <h6>Total</h6>
-                  <p>$0.00</p>
+                  <p>${price}</p>
                 </div>
               </div>
 
@@ -91,14 +120,24 @@ function HomeContent() {
                 <div className={style.amount}>
                   <p>Amount</p>
                   <div className={style.amountSpan}>
-                    <input type="text" placeholder='0' />
+                    <input
+                      type="text"
+                      value={amount}
+                      onChange={handleAmountChange}
+                      placeholder='0'
+                    />
                     <span>M</span>
                   </div>
                 </div>
                 <div className={style.price}>
                   <p>Price</p>
                   <div className={style.amountSpan}>
-                    <input type="text" placeholder='$ 0' />
+                    <input
+                      type="text"
+                      value={price}
+                      onChange={handlePriceChange}
+                      placeholder='$ 0'
+                    />
                     <span>M</span>
                   </div>
                 </div>
