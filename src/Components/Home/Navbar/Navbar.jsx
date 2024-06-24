@@ -9,6 +9,7 @@ import { RxCross1 } from 'react-icons/rx';
 import Login from '../../Forms/Login/Login.jsx';
 import SignUp from '../../Forms/SignUp/SignUp.jsx';
 import GiftForm from '../../Forms/GiftCardForm/GiftForm.jsx';
+import stars from '../../../images/stars.png';
 import TrancHistory from '../../Account/TransactionHistory.jsx';
 
 function Navbar() {
@@ -149,11 +150,12 @@ function Navbar() {
         <div className={styles.leftnavrating}>
           <p>4.7 out of 5 based on 806 user rating</p>
           <div>
+            {/* <FcRating />
             <FcRating />
             <FcRating />
             <FcRating />
-            <FcRating />
-            <FcRating />
+            <FcRating /> */}
+            <img src={stars} alt="" />
           </div>
         </div>
       </div>
@@ -166,11 +168,12 @@ function Navbar() {
         </div>
         <div className={styles.topnav2}>
           <p>4.7 out of 5 based on 806 user ratings</p>
+          {/* <FcRating />
           <FcRating />
           <FcRating />
           <FcRating />
-          <FcRating />
-          <FcRating />
+          <FcRating /> */}
+          <img className={styles.stars} src={stars} alt="" />
         </div>
       </div>
       <div className={styles.nav}>

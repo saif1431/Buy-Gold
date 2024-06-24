@@ -5,6 +5,8 @@ import { IoStar } from "react-icons/io5";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FcRating } from "react-icons/fc";
+import Stars from '../../../images/stars.png';
+
 
 function FAQCard() {
   const settings = {
@@ -53,11 +55,12 @@ function FAQCard() {
           <h2>Trevor Coleman</h2>
           <h6>Rated us 5/5 on TrustPilot</h6>
           <div className={style.rating}>
+            {/* <FcRating />
             <FcRating />
             <FcRating />
             <FcRating />
-            <FcRating />
-            <FcRating />
+            <FcRating /> */}
+            <img src={Stars} alt="" />
           </div>
           <p>Excellent fast and safe service would recommend 10/10!</p>
         </div>
@@ -65,11 +68,12 @@ function FAQCard() {
           <h2>Findeo</h2>
           <h6>Rated us 5/5 on TrustPilot</h6>
           <div className={style.rating}>
+            {/* <FcRating />
             <FcRating />
             <FcRating />
             <FcRating />
-            <FcRating />
-            <FcRating />
+            <FcRating /> */}
+            <img src={Stars} alt="" />  
           </div>
           <p>Excellent, Fast and the exactly what i wanted. 5 STARS ALL THE WAY</p>
         </div>
@@ -77,11 +81,12 @@ function FAQCard() {
           <h2>darski</h2>
           <h6>Rated us 5/5 on TrustPilot</h6>
           <div className={style.rating}>
+            {/* <FcRating />
             <FcRating />
             <FcRating />
             <FcRating />
-            <FcRating />
-            <FcRating />
+            <FcRating /> */}
+            <img src={Stars} alt="" />
           </div>
           <p>Amazing service! Bought 50m delivered instantly, will 100% buy again thanks!</p>
         </div>
@@ -89,11 +94,12 @@ function FAQCard() {
           <h2>Tamin</h2>
           <h6>Rated us 5/5 on TrustPilot</h6>
           <div className={style.rating}>
+            {/* <FcRating />
             <FcRating />
             <FcRating />
             <FcRating />
-            <FcRating />
-            <FcRating />
+            <FcRating /> */}
+            <img src={Stars} alt="" />
           </div>
           <p>Bought gold here plenty of times always fast and good people.</p>
         </div>
@@ -101,11 +107,12 @@ function FAQCard() {
           <h2>Jake</h2>
           <h6>Rated us 5/5 on TrustPilot</h6>
           <div className={style.rating}>
+            {/* <FcRating />
             <FcRating />
             <FcRating />
             <FcRating />
-            <FcRating />
-            <FcRating />
+            <FcRating /> */}
+            <img src={Stars} alt="" />
           </div>
           <p>Bought gold for the 1st time super fast and super easy!</p>
         </div>
@@ -113,11 +120,12 @@ function FAQCard() {
           <h2>Kevin</h2>
           <h6>Rated us 5/5 on TrustPilot</h6>
           <div className={style.rating}>
+            {/* <FcRating />
             <FcRating />
             <FcRating />
             <FcRating />
-            <FcRating />
-            <FcRating />
+            <FcRating /> */}
+            <img src={Stars} alt="" />
           </div>
           <p>Best site i've used for buying osrs goldpieces.
           Till next time RunescapeGP!</p>
@@ -127,12 +135,13 @@ function FAQCard() {
       <div className={style.footerrating}>
             <p>4.7 out of 5 based on 806 user rating</p>
             
-          <div className={style.rating}>
+          <div className={style.ratings}>
+            {/* <FcRating />
             <FcRating />
             <FcRating />
             <FcRating />
-            <FcRating />
-            <FcRating />
+            <FcRating /> */}
+            <img src={Stars} alt="" />
           </div>
       </div>
     </div>

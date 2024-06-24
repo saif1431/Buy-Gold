@@ -42,7 +42,11 @@
       display: flex;
       /* justify-content: center; */
       margin: 10px 0;
-      font-size: 2vw;
+      /* font-size: 1vw; */
+    }
+    .rating img{
+      width: 45%;
+      height: 45%;
     }
     .card p{
       font-size: 1.2vw;
