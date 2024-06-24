@@ -117,6 +117,9 @@ height: 100%;
 width: 90%;
 height: 100%;
       }
+      .ftrLink2, .ftrLink1{
+            font-size: 3.5vw;
+      }
       .feature{
             width: 100%;
             display: flex;
@@ -129,6 +132,7 @@ height: 100%;
             height: 10vh;
             flex-direction: column;
             padding: 2vw 0vw;
+            margin-top: 3vw;
       }
       .bottomFtr p{
             font-size: 3vw;

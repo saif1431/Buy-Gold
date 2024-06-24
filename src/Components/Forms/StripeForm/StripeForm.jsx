@@ -105,7 +105,7 @@ function StripeForm() {
           <div className={styles.StripeFormBox1}>
             <img src={Logo} alt="Logo" />
             <div className={styles.text}>
-              <h3>piegp.com</h3>
+              <h3>RunescapeGP.com</h3>
               <p><span>Order Number:</span> 00HU676</p>
               <p><span>Total:</span> {payment.price} USD</p>
             </div>

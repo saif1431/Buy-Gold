@@ -2,7 +2,7 @@ import React, { useState, forwardRef } from 'react';
 import axios from 'axios';
 import style from './Login.module.css';
 import Logo from '../../../images/twitters.png';
-import mainImg from '../../../images/mainImg.png';
+import mainImg from '../../../images/mainImg1.png';
 import { Link } from 'react-router-dom';
 import { RxCross1 } from "react-icons/rx";
 
@@ -104,7 +104,7 @@ const Login = forwardRef(({ onClose, openSignUp, setIsAuth }, ref) => {
             </form>
           )}
           <div className={style.JumpReg}>
-            <p>New on PieGP?</p>
+            <p>New on RunescapeGP?</p>
             <Link 
               to={"#"} 
               className={style.Jump} 

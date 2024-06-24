@@ -13,7 +13,7 @@ function Footer() {
       </div>
       <div className={FtrStyle.feature}>
       <div className={FtrStyle.footer2}>
-            <h4>PieGP</h4>
+            <h4>RunescapeGP</h4>
             <div className={FtrStyle.ftrLinks}>
             <Link className={FtrStyle.ftrLink1}>About US</Link>
             <Link className={FtrStyle.ftrLink1}>Blog</Link>
@@ -45,7 +45,7 @@ function Footer() {
     </div>
 
     <div className={FtrStyle.bottomFtr}>
-      <p>Copyright © 2024 PieGP. All Rights Reserved.</p>
+      <p>Copyright © 2024 RunescapeGP. All Rights Reserved.</p>
       <p>Statpoint Support Services Limited HE 410270 Avlonos, 1 Maria House, 1075, Nicosia, Cyprus.</p>
     </div>
     </div>

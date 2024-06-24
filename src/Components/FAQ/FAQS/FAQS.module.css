@@ -1,9 +1,11 @@
 .FAQS {
       width: 100%;
       height: fit-content;
-      background-color: #282F48;
+      background: linear-gradient(rgba(40, 47, 71, 1), rgba(40, 47, 71, 0.9)), url(../../../images/backgroungImg.jpg);
+      background-size: cover;
+      background-position: center;
       padding: 4vw 8vw;
-      margin-top: 8vw;
+      /* margin-top: 8vw; */
       display: flex;
       align-items: center;
       justify-content: center;
@@ -13,7 +15,9 @@
       width: 50%;
       height: fit-content;
       background-color: #2F354D;
-      padding: 1vw;
+      border-radius: 8px;
+      border: 1px solid #566781;
+      padding: 2vw;
     }
     
     .FAQSBox h5 {

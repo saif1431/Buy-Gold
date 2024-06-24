@@ -16,6 +16,12 @@ import ntl from '../../../images/ntl.svg';
 import pwy from '../../../images/pwy.svg';
 import buy from '../../../images/buy.svg';
 import BuyNowForm from '../../Forms/Buy Now Form/BuyNowForm.jsx';
+import Logo from '../../../images/twitters.png';
+import { AiFillSafetyCertificate } from "react-icons/ai";
+
+
+
+
 
 function HomeContent() {
   const [selectedCard, setSelectedCard] = useState(null);
@@ -72,6 +78,7 @@ function HomeContent() {
   return (
     <>
       <div className={showForm ? style.blurredBackground : ''}>
+        <div className={style.container}>
         <div className={style.mainContent}>
           <div className={style.content1}>
             <h1 className={style.heading1}>Buy & Sell</h1>
@@ -110,7 +117,7 @@ function HomeContent() {
                   <h6>Buy OSRS Gold</h6>
                 </div>
                 <div className={style.TotalPrice}>
-                  <h6>Total</h6>
+                  <h6>Total:</h6>
                   <p>${price}</p>
                 </div>
               </div>
@@ -215,7 +222,8 @@ function HomeContent() {
               {/* BUTTON---------- */}
               <div className={style.buyButton}>
                 <button onClick={handleBuyNowClick}>
-                  <img src={buy} alt="" />
+                <AiFillSafetyCertificate className={style.safe} />
+
                   Buy Now
                 </button>
               </div>
@@ -224,13 +232,14 @@ function HomeContent() {
         </div>
 
         <div className={style.whyPie}>
-          <h5>Why PieGP?</h5>
+          <h5>Why RunescapeGP?</h5>
           <h2>100% Secure</h2>
           <h2>No Verification</h2>
           <h2>No Registration Needed</h2>
         </div>
       </div>
       {showForm && <BuyNowForm onClose={handleCloseForm} />}
+      </div>
     </>
   );
 }

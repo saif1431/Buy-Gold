@@ -1,14 +1,24 @@
 
 html, body{
       overflow-x: hidden;
+
  }
+.container{
+      width: 100vw;
+      height: fit-content;
+     background: linear-gradient(rgba(40, 47, 71, 1), rgba(40, 47, 71, 0.9)), url(../../../images/backgroungImg.jpg);
+     background-size: cover;
+     background-position: center;
+     padding: 2vw;
+}
 .mainContent{
       width: 100vw;
       height: fit-content;
       display: flex;
-      /* align-items: center; */
+      /* background-color: red; */
       justify-content: space-evenly;
-      margin-top: 8vw;
+      margin-top: 0vw;
+      /* background-color: RED; */
 }
 
 .content1{
@@ -30,7 +40,6 @@ html, body{
       width: 45vw;
       height:fit-content;
       overflow-x: hidden;
-      /* background-color: red;     */
 }
 .mainContentBtn{
       display: flex;
@@ -78,18 +87,19 @@ html, body{
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: 5px;
-       
+      padding: .5vw;
+      border-radius: 5px; 
 }
 .content2Btns2{
       width: 40%;
       height: 100%;
       background-color: #24293F;
       display: flex;
+      padding: .5vw;
       align-items: center;
       justify-content: center;
       border-radius: 5px;
-      border: 1.5px solid #1BB67F;
+      border: 1.5px solid #1BB67F; 
 }
 .payments{
       width: 80%;
@@ -97,8 +107,8 @@ html, body{
       background-color: #2F354D;
       margin: 0 auto;
       margin-top: 2vw;
-      border-radius: 8px;
-      border: 1px solid #333;
+      border-radius: 12px;
+      border: 1px solid #545d7b;
 }
 .totalPrice{
       display: flex;
@@ -121,20 +131,23 @@ html, body{
 .TotalPrice{
       display: flex;
       align-items: center;
-      gap: .6vw;
+      gap: .8vw;
 }
 .TotalPrice h6{
+      font-size: .9vw;
+      color: #8891AD;
+}
+.TotalPrice p{
       font-size: 1vw;
-      color: #887D87;
 }
 .amountInputs{
       display: flex;
       align-items: center;
       justify-content:space-around;
-      padding: 1vw;
+      padding: 2vw;
 }
 .amountInputs input{
-      /* padding: 1vw 1vw; */
+      padding: .3vw .5vw;
       background-color: #282E44;
       border: none;
       outline: none;
@@ -164,7 +177,7 @@ html, body{
       margin-top: 0vw;
 }
 .runescape input{
-      padding: 1.3vw 1.5vw;
+      padding: 1.3vw 1.8vw;
       background-color: #282E44;
       border: none;
       outline: none;

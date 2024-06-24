@@ -1,0 +1,51 @@
+
+.refund{
+      width: 100vw;
+      height: fit-content;
+      background: linear-gradient(rgba(40, 47, 71, 1), rgba(40, 47, 71, 0.9)), url(../../../images/backgroungImg.jpg);
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+padding: 2vw;
+}
+.refundContainer{
+      width: 90%;
+      height: 100%;
+      background-color: #2F354D;
+      margin-top: 8vw;
+}
+.refundHeading h1{
+      text-align: center;
+      margin-top: 2vw;
+      font-size: 1.5vw;
+}
+.refundHeading hr{
+      width: 100%;
+      border: 1px solid #58638e;
+}
+.refundText{
+      padding: 3vw;
+}
+.refundBox h3{
+      font-size: 1.3vw;
+}
+.refundBox p{
+      font-size: 1.1vw;
+      color: #7180AD;
+}
+
+@media screen and (width > 300px) and (width < 768px){
+
+      .refundHeading h1{
+            font-size: 6vw;
+      }   
+
+      .refundBox h3{
+            font-size: 5vw;
+      }
+      .refundBox p{
+            font-size: 3.8vw;
+      }
+}

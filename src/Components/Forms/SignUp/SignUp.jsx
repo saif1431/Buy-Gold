@@ -2,9 +2,13 @@ import React, { useState, forwardRef } from 'react';
 import axios from 'axios';
 import style from './SignUp.module.css';
 import Logo from '../../../images/twitters.png';
-import mainImg from '../../../images/mainImg.png';
+import mainImg from '../../../images/mainImg1.png';
 import { Link } from 'react-router-dom';
 import { RxCross1 } from 'react-icons/rx';
+import TermsServices from '../../Terms&Services/TermsServices';
+import RefundPolicy from '../../Refund Policy/RefundPolicy.jsx';
+
+
 
 const SignUp = forwardRef(({ onClose, openLogin }, ref) => {
   const [email, setEmail] = useState('');
@@ -55,7 +59,7 @@ const SignUp = forwardRef(({ onClose, openLogin }, ref) => {
         </div>
         <div className={style.LoginSide2}>
           <RxCross1 onClick={onClose} className={style.cross} />
-          <h1>Registration</h1>
+          {/* <h1>Registration</h1> */}
           <form onSubmit={handleRegister} className={style.inputBox}>
             {error && <p className={style.error}>{error}</p>}
             <input
@@ -88,11 +92,11 @@ const SignUp = forwardRef(({ onClose, openLogin }, ref) => {
               />
               <h5>
                 I have read and accept the{' '}
-                <Link className={style.termLink} to="/terms-of-service">
+                <Link className={style.termLink} to="/TermsServices">
                   Terms of Service
                 </Link>{' '}
                 and{' '}
-                <Link className={style.termLink} to="/refund-policy">
+                <Link className={style.termLink} to="/RefundPolicy">
                   Refund Policy
                 </Link>
               </h5>

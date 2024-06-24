@@ -3,19 +3,21 @@
 .SellGolds{
       width: 100vw;
       height: 100vh;
-      background-color: #293049;
+      background: linear-gradient(rgba(40, 47, 71, 1), rgba(40, 47, 71, 0.9)), url(../../../images/backgroungImg.jpg);
+      background-size: cover;
+      background-position: center;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: 3vw;
-      /* padding: 2vw 2vw; */
+      margin-top: 0vw;
+overflow: hidden;
 }
 .SellGoldsBox{
       width: 35%;
       height: fit-content     ;
       background-color: #2F354D;
       border-radius: 5px;
-      border: 1px solid #555;
+      border: 1px solid #566781;
       padding: 1vw 1vw;
 }
 .SellGoldsBox1{

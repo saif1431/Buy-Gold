@@ -5,9 +5,11 @@ html, body{
 .supportForm{
       width: 100vw;
       height: fit-content;
-      background-color: #32364C;
+      background: linear-gradient(rgba(40, 47, 71, 1), rgba(40, 47, 71, 0.9)), url(../../../images/backgroungImg.jpg);
+      background-size: cover;
+      background-position: center;
       padding: 2vw 8vw;
-      margin-top: 9VW;
+      /* margin-top: 9VW; */
       display: flex;
       align-items: center;
       justify-content: center;
@@ -18,7 +20,7 @@ html, body{
       height: fit-content;
       background-color: #2F354D;
       border-radius: 8px;
-      border: 2px solid #555;
+      border: 1px solid #566781;
 }
 .supportFormDiv h3{
       text-align: center;
@@ -34,11 +36,12 @@ html, body{
       display: flex;
       align-items: center;
       justify-content: space-around;
+      gap: 1vw;
       padding: 2vw;
 }
 .SupportInput input{
-      width: 48%;
-      padding: 1.4vw;
+      width: 70%;
+      padding: 1.4vw 3vw;
       border: none;
       outline: none;
       border-radius: 5px;
@@ -51,8 +54,8 @@ html, body{
       color: #7191B7;
 }
 .SupportInput select{
-      width: 48%;
-      padding: 1.4vw;
+      width: 70%;
+      padding: 1.4vw 3vw;
       border: none;
       outline: none;
       border-radius: 5px;
@@ -66,7 +69,7 @@ html, body{
       margin: 4vw;
 }
 textarea{
-      width: 90%;
+      width: 82%;
       padding: 1vw ;
       border: none;
       outline: none;

@@ -120,7 +120,7 @@ function FAQCard() {
             <FcRating />
           </div>
           <p>Best site i've used for buying osrs goldpieces.
-          Till next time PieGP!</p>
+          Till next time RunescapeGP!</p>
         </div>
       </Slider>
 

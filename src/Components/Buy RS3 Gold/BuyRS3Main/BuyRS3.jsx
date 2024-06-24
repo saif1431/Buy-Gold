@@ -55,7 +55,7 @@ function HomeContent() {
 
   return (
     <>
-      <div>
+      <div className={style.container}>
         <div className={style.mainContent}>
           <div className={style.content1}>
             <h1 className={style.heading1}>Buy & Sell</h1>
@@ -94,7 +94,7 @@ function HomeContent() {
                   <h6>Buy OSRS Gold</h6>
                 </div>
                 <div className={style.TotalPrice}>
-                  <h6>Total</h6>
+                  <h6>Total:</h6>
                   <p>${price}</p>
                 </div>
               </div>

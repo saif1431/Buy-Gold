@@ -1,9 +1,9 @@
 .FAQS {
       width: 100%;
       height: fit-content;
-      background-color: #282b3e;
-      padding: 1vw 2vw;
-      margin-top: 2vw;
+      background-color: #2C3149;
+      padding: 1vw 3vw;
+      /* margin-top: 2vw; */
     }
     
     .FAQSBox {

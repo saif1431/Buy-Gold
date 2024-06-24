@@ -40,7 +40,7 @@ function FAQS() {
               />
             </div>
             <div className={`${styles.FAQpTag} ${openSection === 'section2' ? styles.show : styles.hide}`}>
-              <p>Unlike our competitors, we do not require our customers to provide any form of personal identification, such as their government ID or passport. Here at PieGP, we believe in customer’s right to their privacy and the protection of their data.</p>
+              <p>Unlike our competitors, we do not require our customers to provide any form of personal identification, such as their government ID or passport. Here at RunescapeGP, we believe in customer’s right to their privacy and the protection of their data.</p>
             </div>
           </div>
           <div className={styles.FAQSBox3}>
@@ -51,7 +51,7 @@ function FAQS() {
               />
             </div>
             <div className={`${styles.FAQpTag} ${openSection === 'section3' ? styles.show : styles.hide}`}>
-              <p>Buying RuneScape gold from PieGP is the safest option available on the market. We have learned a lot about keeping customers safe from our eight years of experience serving the RuneScape community. Unlike our competitors, we use our in-house accounts, hardware, and technology to trade with you directly. With our position as the best gold shop in the market, we’re trading trillions in gold. With so much volume, we have to take every precaution to remain safe, which ultimately benefits you as the customer.</p>
+              <p>Buying RuneScape gold from RunescapeGP is the safest option available on the market. We have learned a lot about keeping customers safe from our eight years of experience serving the RuneScape community. Unlike our competitors, we use our in-house accounts, hardware, and technology to trade with you directly. With our position as the best gold shop in the market, we’re trading trillions in gold. With so much volume, we have to take every precaution to remain safe, which ultimately benefits you as the customer.</p>
             </div>
           </div>
           <div className={styles.FAQSBox4}>
@@ -62,7 +62,7 @@ function FAQS() {
               />
             </div>
             <div className={`${styles.FAQpTag} ${openSection === 'section4' ? styles.show : styles.hide}`}>
-              <p>Whether this is your first time buying RuneScape gold, or you’re one of thousands of customers part of the PieGP community, we want the experience to be as easy as possible for you. You can follow these simple steps below to purchase your gold, and receive it in just a few minutes.
+              <p>Whether this is your first time buying RuneScape gold, or you’re one of thousands of customers part of the RunescapeGP community, we want the experience to be as easy as possible for you. You can follow these simple steps below to purchase your gold, and receive it in just a few minutes.
 							
               </p>
               <br />
@@ -78,13 +78,13 @@ function FAQS() {
           </div>
           <div className={styles.FAQSBox5}>
             <div className={styles.FAQdiv} onClick={() => handleArrow('section5')}>
-              <h4>Why should I buy RuneScape gold from PieGP?</h4>
+              <h4>Why should I buy RuneScape gold from RunescapeGP?</h4>
               <IoIosArrowForward 
                 className={`${styles.IoIosArrowForward} ${openSection === 'section5' ? styles.rotate : ''}`} 
               />
             </div>
             <div className={`${styles.FAQpTag} ${openSection === 'section5' ? styles.show : styles.hide}`}>
-              <p>Established in 2015, PieGP has been the leading RuneScape gold shop for nearly a decade. We are happy to be able to provide multiple payment methods and an unbeatable price, so you have flexibility in how you buy. With our experience and professional staff, trades usually only take a few minutes, so you can get back to what you truly love doing in the game.</p>
+              <p>Established in 2015, RunescapeGP has been the leading RuneScape gold shop for nearly a decade. We are happy to be able to provide multiple payment methods and an unbeatable price, so you have flexibility in how you buy. With our experience and professional staff, trades usually only take a few minutes, so you can get back to what you truly love doing in the game.</p>
               <br />
               <br />
               <p>

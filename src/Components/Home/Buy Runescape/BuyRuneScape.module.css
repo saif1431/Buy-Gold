@@ -1,7 +1,9 @@
 .buyRuneScape{
       width: 100vw;
       height: 50vh;
-      background-color: #282D44;
+      background: linear-gradient(rgba(40, 47, 71, 1.5), rgba(40, 47, 71, 1.2)), url(../../../images/backgroungImg.jpg);
+      background-size: cover;
+      background-position: center;
       padding: 5vw;
       display: flex;
       flex-direction: column;
@@ -44,16 +46,16 @@
       }
       
 .buyRuneScape h1{
-      font-size: 6vw;
+      font-size: 5vw;
 }
 .buyRuneScape p{
       color: #8891B7;
-      font-size: 4vw;
+      font-size: 3.5vw;
       text-align: center;
 }
 .buyRuneScape button{   
       width: 60%;
-      font-size: 5vw;
-      padding: 1vw 4vw;
+      font-size: 4.8vw;
+      padding: 3vw 4vw;
 }
 }

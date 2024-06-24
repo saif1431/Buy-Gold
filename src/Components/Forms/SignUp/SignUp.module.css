@@ -8,7 +8,7 @@
       top: 5%;
       left: 20%;
       transform: translate(-50% -50%);
-      box-shadow: 0px 0px 3px 3px #555;
+      /* box-shadow: 0px 0px 3px 3px #555; */
       overflow: hidden;
       display: flex;
       align-items: center;
@@ -17,7 +17,9 @@
 .LoginSide1{
 width: 50%;
 height: 100%;
-background-color:#303752;
+background: linear-gradient(rgba(40, 47, 71, 1), rgba(40, 47, 71, 0.9)), url(../../../images/backgroungImg.jpg);
+background-size: cover;
+background-position: center;
 }
 .LoginSide2{
 width: 50%;
@@ -40,8 +42,8 @@ background-color: #2F354D;
       justify-content: end;
 }
 .mainImg img{
-      width: 65%;
-      height: 60%;
+      width: 90%;
+      height: 40%;
 }
 .pTag{
       display: flex;
@@ -63,7 +65,7 @@ background-color: #2F354D;
       align-items: center;
       justify-content: center;
       gap: 1vw;
-      margin-top: 3vw;
+      margin-top: 8vw;
 }
 .cross{
       position: absolute;
@@ -93,7 +95,7 @@ background-color: #2F354D;
       border-radius: 4px;     
       background-color: #282E44;
       color: #fff;
-      border: 1px solid #444;
+      border: 1px solid #566781;
 }
 .terms{
       width: 100%;
@@ -125,6 +127,7 @@ background-color: #2F354D;
       border: 1px solid #444;
       cursor: pointer;
       transition: all ease 1s;
+      margin-left: 2vw;
 }
 
 .inputBox button:hover{
