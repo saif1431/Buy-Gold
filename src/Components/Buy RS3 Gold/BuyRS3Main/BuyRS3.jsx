@@ -5,7 +5,7 @@ import svg2 from '../../../images/svg2.svg';
 import { CiShoppingCart } from "react-icons/ci";
 import { SiTicktick } from "react-icons/si";
 import bankCard from '../../../images/bankcard.svg';
-import gci from '../../../images/gci.svg';
+import gci from '../../../images/gci.png';
 import psc from '../../../images/psc.svg';
 import wlt from '../../../images/wlt.svg';
 import klarna from '../../../images/klarna.svg';
@@ -15,6 +15,11 @@ import discover from '../../../images/discoverjcb.svg';
 import ntl from '../../../images/ntl.svg';
 import pwy from '../../../images/pwy.svg';
 import buy from '../../../images/buy.svg';
+import { AiFillSafetyCertificate } from "react-icons/ai";
+import { Link } from 'react-router-dom';
+
+
+
 
 function HomeContent() {
   const [selectedCard, setSelectedCard] = useState(null);
@@ -79,12 +84,12 @@ function HomeContent() {
           </div>
           <div className={style.content2}>
             <div className={style.content2Btns}>
-              <div className={style.content2Btns1}>
+              <Link to="/" className={style.content2Btns1}>
                 <img src={svg1} alt="" />
-              </div>
-              <div className={style.content2Btns2}>
+              </Link >
+              <Link to="/BuyRS3Gold" className={style.content2Btns2}>
                 <img src={svg2} alt="" />
-              </div>
+              </Link>
             </div>
 
             <div className={style.payments}>
@@ -144,7 +149,7 @@ function HomeContent() {
                     </div>
                     <div className={`${style.visa1} ${isSelected('gci')}`} onClick={() => handleCardClick('gci')}>
                       {selectedCard === 'gci' && <SiTicktick className={style.tickMark} />}
-                      <img src={gci} alt="GCI" />
+                      <img className={style.gci} src={gci} alt="GCI" />
                     </div>
                     <div className={`${style.visa1} ${isSelected('psc')}`} onClick={() => handleCardClick('psc')}>
                       {selectedCard === 'psc' && <SiTicktick className={style.tickMark} />}
@@ -199,7 +204,7 @@ function HomeContent() {
               {/* BUTTON---------- */}
               <div className={style.buyButton}>
                 <button onClick={handleBuyNow}>
-                  <img src={buy} alt="" />
+                <AiFillSafetyCertificate className={style.safe} />
                   Buy Now
                 </button>
               </div>

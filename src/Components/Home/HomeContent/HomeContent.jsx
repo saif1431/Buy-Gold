@@ -5,7 +5,7 @@ import svg2 from '../../../images/svg2.svg';
 import { CiShoppingCart } from "react-icons/ci";
 import { SiTicktick } from "react-icons/si";
 import bankCard from '../../../images/bankcard.svg';
-import gci from '../../../images/gci.svg';
+import gci from '../../../images/gci.png';
 import psc from '../../../images/psc.svg';
 import wlt from '../../../images/wlt.svg';
 import klarna from '../../../images/klarna.svg';
@@ -18,7 +18,8 @@ import buy from '../../../images/buy.svg';
 import BuyNowForm from '../../Forms/Buy Now Form/BuyNowForm.jsx';
 import Logo from '../../../images/twitters.png';
 import { AiFillSafetyCertificate } from "react-icons/ai";
-
+import { Link } from 'react-router-dom';
+// import BuyRS3Gold from '../../Buy RS3 Gold/BuyRS3Gold.jsx'
 
 
 
@@ -102,12 +103,14 @@ function HomeContent() {
           </div>
           <div className={style.content2}>
             <div className={style.content2Btns}>
-              <div className={style.content2Btns1}>
+              <Link to={"/BuyRS3Gold"} className={style.content2Btns1} >
+              <div>
                 <img src={svg1} alt="" />
               </div>
-              <div className={style.content2Btns2}>
+              </Link>
+              <Link to={"/BuyRS3Gold"} className={style.content2Btns2} >
                 <img src={svg2} alt="" />
-              </div>
+            </Link>
             </div>
 
             <div className={style.payments}>
@@ -167,7 +170,7 @@ function HomeContent() {
                     </div>
                     <div className={`${style.visa1} ${isSelected('gci')}`} onClick={() => handleCardClick('gci')}>
                       {selectedCard === 'gci' && <SiTicktick className={style.tickMark} />}
-                      <img src={gci} alt="GCI" />
+                      <img className={style.gci} src={gci} alt="GCI" />
                     </div>
                     <div className={`${style.visa1} ${isSelected('psc')}`} onClick={() => handleCardClick('psc')}>
                       {selectedCard === 'psc' && <SiTicktick className={style.tickMark} />}

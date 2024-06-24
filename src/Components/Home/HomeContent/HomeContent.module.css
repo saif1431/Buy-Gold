@@ -185,6 +185,12 @@
       border-radius: 5px;
       color: #fff;
 }
+.gci{
+      width: 80%;
+      height: 80%;
+      object-fit: cover;
+      object-position: center;
+}
 .visaCards {
       padding: 3vw;
    
@@ -362,8 +368,15 @@ height: 8%;
             font-size: 3vw;
       }
       .mainContentBtn1{
+            /* width: 50%; */
             font-size: 7vw;
             padding: 1vw 4vw;
+      }
+      .content2Btns1{
+            width: 45%;
+      }
+      .content2Btns2{
+            width: 45%;
       }
       .mainContentBtn1 span{
             font-size: 5vw;
@@ -394,7 +407,7 @@ height: 8%;
       }
       .amountInputs input{
             font-size: 4vw;
-            width: 60%;
+            width: 80%;
       }
       .amountSpan{
             padding: 3vw 2vw;

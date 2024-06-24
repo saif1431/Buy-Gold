@@ -40,6 +40,7 @@ html, body{
       width: 45vw;
       height:fit-content;
       overflow-x: hidden;
+      /* background-color: red;     */
 }
 .mainContentBtn{
       display: flex;
@@ -88,7 +89,8 @@ html, body{
       align-items: center;
       justify-content: center;
       padding: .5vw;
-      border-radius: 5px; 
+      border-radius: 5px;
+        
 }
 .content2Btns2{
       width: 40%;
@@ -99,7 +101,7 @@ html, body{
       align-items: center;
       justify-content: center;
       border-radius: 5px;
-      border: 1.5px solid #1BB67F; 
+      border: 1.5px solid #1BB67F;
 }
 .payments{
       width: 80%;
@@ -107,7 +109,7 @@ html, body{
       background-color: #2F354D;
       margin: 0 auto;
       margin-top: 2vw;
-      border-radius: 12px;
+      border-radius: 8px;
       border: 1px solid #545d7b;
 }
 .totalPrice{
@@ -253,6 +255,12 @@ justify-content: space-evenly;
       border-radius: 6px;
       transition: all ease 1s;
 }
+.gci{
+      width: 80%;
+      height: 80%;
+      object-fit: cover;
+      object-position: center;
+}
 .visaMore:hover{
       border: 1px solid #1BB67F; 
 }
@@ -307,6 +315,10 @@ justify-content: space-evenly;
       justify-content: center;
       gap: .3vw;
 }
+.buyButton img{
+      width: 8%;
+height: 8%;
+}
 
 .whyPie{
       display: flex;
@@ -328,17 +340,18 @@ justify-content: space-evenly;
 @media screen and (width > 300px) and (width < 768px){
       .mainContent{
             flex-direction: column;
-            /* padding: 2vw 3vw; */
+            padding: 2vw 3vw;
       }   
       .content1{
             width: 90%;
             height: 20vh;
-            margin-top: 24vw;
+            margin-top: 10vw;
       }
       .payments{
             overflow-x: hidden;
             width: 90%;
             height: fit-content;
+            margin-top: 5vw;
       }
       .content1 .heading1{
             font-size: 5vw;
@@ -354,6 +367,12 @@ justify-content: space-evenly;
       .mainContentBtn p{
             color: #8891B7;
             font-size: 3vw;
+      }
+      .content2Btns1{
+            width: 45%;
+      }
+      .content2Btns2{
+            width: 45%;
       }
       .mainContentBtn1{
             font-size: 7vw;
@@ -377,6 +396,9 @@ justify-content: space-evenly;
             font-size: 3vw;
             color: #887D87;
       }
+      .TotalPrice p{
+            font-size: 3vw;
+      }
       .amountInputs{
             display: flex;
             gap: 2vw;
@@ -385,7 +407,7 @@ justify-content: space-evenly;
       }
       .amountInputs input{
             font-size: 4vw;
-            width: 60%;
+            width: 80%;
       }
       .amountSpan{
             padding: 3vw 2vw;

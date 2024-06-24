@@ -3,7 +3,7 @@ import axios from 'axios';
 import styles from './StripeForm.module.css';
 import Logo from '../../../images/twitters.png';
 import visa from '../../../images/visa.svg';
-import gci from '../../../images/gci.svg';
+import gci from '../../../images/gci.png';
 import ubt from '../../../images/ubt.svg';
 import wlt from '../../../images/wlt.svg';
 import skrill from '../../../images/skrill.svg';
@@ -135,7 +135,7 @@ function StripeForm() {
             <h1>Unlimit</h1>
             <div className={styles.card}>
               <img src={visa} alt="visa" />
-              <img src={gci} alt="gci" />
+              <img className={styles.gci} src={gci} alt="gci" />
               <img src={visa} alt="visa" />
               <img src={ubt} alt="ubt" />
               <img src={skrill} alt="skrill" />
