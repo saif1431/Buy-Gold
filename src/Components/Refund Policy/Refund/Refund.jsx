@@ -22,7 +22,7 @@ function Refund() {
 <p>We reserve the right to refund any purchases of in-game digital items created using a VPN or Proxy.
 </p>
 <br />
-<p>PieGP is not held liable for any fees incurred when a refund is issued.
+<p>RunescapeGP is not held liable for any fees incurred when a refund is issued.
 </p>
 <br />
 
@@ -30,7 +30,7 @@ function Refund() {
       <div className={styles.refundBox}>
 <h3>2.0 Right to Refuse Service</h3>
 <br />
-<p>PieGP's services are not available to temporarily or indefinitely suspended PieGP members. PieGP reserves the right, in PieGP's sole discretion, to cancel PieGP accounts. PieGP reserves the right to refuse service to anyone, for any reason, at any time.
+<p>RunescapeGP's services are not available to temporarily or indefinitely suspended RunescapeGP members. RunescapeGP reserves the right, in RunescapeGP's sole discretion, to cancel RunescapeGP accounts. RunescapeGP reserves the right to refuse service to anyone, for any reason, at any time.
 </p>
       </div>
 </div>

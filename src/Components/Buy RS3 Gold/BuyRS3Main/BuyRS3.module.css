@@ -90,7 +90,7 @@ html, body{
       justify-content: center;
       padding: .5vw;
       border-radius: 5px;
-        
+     
 }
 .content2Btns2{
       width: 40%;
@@ -101,12 +101,14 @@ html, body{
       align-items: center;
       justify-content: center;
       border-radius: 5px;
-      border: 1.5px solid #1BB67F;
+      border: 1.5px solid #1BB67F;  
 }
 .payments{
       width: 80%;
       height: fit-content;
-      background-color: #2F354D;
+      background: linear-gradient(rgba(40, 47, 71, 1), rgba(40, 47, 71, 0.9)), url(../../../images/backgroungImg.jpg);
+      background-size: cover;
+      background-position: center;
       margin: 0 auto;
       margin-top: 2vw;
       border-radius: 8px;
@@ -186,6 +188,12 @@ html, body{
       border-radius: 5px;
       color: #fff;
 }
+.gci{
+      width: 85%;
+      height: 85%;
+      object-fit: contain;
+      object-position: center;
+}
 .visaCards {
       padding: 3vw;
    
@@ -240,10 +248,14 @@ justify-content: space-evenly;
       align-items: center;
       justify-content: center;
       width: 30% ;
-      height: 7vh;
+      height: 8vh;
       background-color: #373F5A;
       border-radius: 6px;
       transition: all ease 1s;
+}
+.visa1 img{
+      width: 70%;
+      height: 70%;
 }
 .visaMore{
       display: flex;
@@ -254,12 +266,6 @@ justify-content: space-evenly;
       background-color: #282E44;
       border-radius: 6px;
       transition: all ease 1s;
-}
-.gci{
-      width: 80%;
-      height: 80%;
-      object-fit: cover;
-      object-position: center;
 }
 .visaMore:hover{
       border: 1px solid #1BB67F; 
@@ -368,15 +374,16 @@ height: 8%;
             color: #8891B7;
             font-size: 3vw;
       }
+      .mainContentBtn1{
+            /* width: 50%; */
+            font-size: 7vw;
+            padding: 1vw 4vw;
+      }
       .content2Btns1{
             width: 45%;
       }
       .content2Btns2{
             width: 45%;
-      }
-      .mainContentBtn1{
-            font-size: 7vw;
-            padding: 1vw 4vw;
       }
       .mainContentBtn1 span{
             font-size: 5vw;

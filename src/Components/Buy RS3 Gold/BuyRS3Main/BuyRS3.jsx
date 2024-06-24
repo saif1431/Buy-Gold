@@ -213,7 +213,7 @@ function HomeContent() {
         </div>
 
         <div className={style.whyPie}>
-          <h5>Why PieGP?</h5>
+          <h5>Why RunescapeGP?</h5>
           <h2>100% Secure</h2>
           <h2>No Verification</h2>
           <h2>No Registration Needed</h2>
