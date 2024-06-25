@@ -8,7 +8,7 @@ html, body{
       background: linear-gradient(rgba(40, 47, 71, 1), rgba(40, 47, 71, 0.9)), url(../../../images/backgroungImg.jpg);
       background-size: cover;
       background-position: center;
-      padding: 2vw 8vw;
+      padding: 1vw 8vw;
       /* margin-top: 9VW; */
       display: flex;
       align-items: center;
@@ -37,7 +37,7 @@ html, body{
       align-items: center;
       justify-content: space-around;
       gap: 1vw;
-      padding: 2vw;
+      /* padding: 1vw; */
 }
 .SupportInput input{
       width: 70%;
@@ -130,16 +130,17 @@ textarea{
             padding: 8vw 5vw;
       }
       .SupportInput{
+            width: 100%;
             flex-direction: column;
-            padding: 4vw;
+            /* padding: 4vw; */
       } 
       .SupportInput input{
-            width: 90%;
+            width: 89%;
             padding: 4vw;
             font-size: 3vw;
       }     
       .SupportInput select{
-            width: 90%;
+            width: 88%;
             padding: 4vw;
             font-size: 3vw;
             margin-top: 2vw;
@@ -156,7 +157,7 @@ textarea{
             justify-content: center;
       }
       .supportFormDiv button{
-            width: 50%;
+            /* width: 50%; */
             padding: 4vw;
             font-size: 3vw;
             margin-top: 4vw;
@@ -169,6 +170,48 @@ textarea{
       }
       .info h6{
             font-size: 3vw;
+            font-weight: 300;
+      }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+      .supportFormDiv{
+            width: 70%;
+      }
+      .supportFormDiv p{
+            width: 90%;
+            font-size: 1.7vw;
+      }
+      .SupportInput{
+            width: 100%;
+      }
+      .SupportInput input{
+            width: 90%;
+            font-size: 1.7vw;
+            padding: 2vw;
+      }
+      .SupportInput select{
+            width: 90%;
+            font-size: 1.7vw;
+            padding: 2vw;
+      }
+      textarea{
+            width: 90%;
+            font-size: 1.7vw;
+            padding: 2vw;
+      }
+      .supportFormDiv button{
+            font-size: 2.3vw;
+            padding: 2vw;
+      }
+      .companyInfo h4{
+            font-size: 2vw;
+      }
+      .info h6{
+            font-size: 1.7vw;
             font-weight: 300;
       }
 }

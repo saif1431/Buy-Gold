@@ -2,7 +2,7 @@
 
 .SellGolds{
       width: 100vw;
-      height: 100vh;
+      height: fit-content;
       background: linear-gradient(rgba(40, 47, 71, 1), rgba(40, 47, 71, 0.9)), url(../../../images/backgroungImg.jpg);
       background-size: cover;
       background-position: center;
@@ -11,6 +11,7 @@
       justify-content: center;
       margin-top: 0vw;
 overflow: hidden;
+padding: 4vw;
 }
 .SellGoldsBox{
       width: 35%;
@@ -195,3 +196,52 @@ border-radius: 7px;
     }
 
 }
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+      .SellGoldsBox{
+            width: 40%;
+            padding: 2vw;
+      }
+      .shpCard{
+            font-size: 3vw;
+            color: #4D5779;
+      }
+      .picGames2{
+            gap: 2vw;
+      }
+      .SellGoldsBox1 h5{
+            font-size: 3vw;
+      }
+      .picGames1{
+            width: 55%;
+            padding: 1vw ;
+      }
+      .picGames2{
+            width: 55%;
+            padding: 1vw ;
+      }
+      .picGames img{
+            width: 4vw;
+      }
+      .inputbox {
+            width: 100%;
+      }
+      .picGameInput{
+            width: 95%;
+      }
+      .inputbox input {
+            width: 90%;
+            font-size: 2.3vw;
+            padding: 2vw;
+      }
+      .SellGolds p{
+            width: 95%;
+            font-size: 2vw;
+      }
+      .SellGolds button{
+            padding: 2vw;
+            font-size: 3vw;
+      }
+    }

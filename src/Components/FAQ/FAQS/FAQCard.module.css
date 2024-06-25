@@ -96,3 +96,31 @@
         font-size: 4vw;
       }
     }
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .heading {
+        font-size: 5vw;
+      }
+      .star {
+        font-size: 30px;
+      }
+      .card{
+        width: 35vw;
+        height: 20vh;
+      }
+      .card h2{
+        font-size: 2.5vw;
+        font-weight: 500;
+      }
+      .card h6{
+        font-size: 2vw;
+        color: #ffc107;
+      }
+      .rating img{
+        width: 60%;
+        height: 60%;
+      }
+      .card p{
+        font-size: 1.7vw;
+      }
+    }

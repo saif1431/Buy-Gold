@@ -134,6 +134,12 @@ function Navbar() {
               <button onClick={openSignUp} className={styles.btn2}>SIGN UP</button>
             </>
           )}
+          {
+          isAuthorized && <>
+          <Link  to={"/TrancHistory"}>
+          <button className={styles.btn3}>Account</button></Link>
+          </>
+        }
         </div>
         <hr />
         <div className={styles.leftNavLinks}>

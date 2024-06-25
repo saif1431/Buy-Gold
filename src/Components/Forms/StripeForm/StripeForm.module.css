@@ -1,5 +1,9 @@
 
-
+body{
+      width: 100%;
+      height: 100%;
+      background-color:#DFDFDF;
+}
 .StripeForm{
       width: 100%;
       height: fit-content;
@@ -125,16 +129,19 @@ form input{
 
     }
     .gci{
-      width: 80%;
-      height: 80%;
+      width: 7%;
+      height: 7%;
       object-fit: cover;
       object-position: center;
 }
 .cards{
+      width: 90%;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      /* flex-wrap: wrap; */
       padding: 2vw;
+      gap: 45vw;
 }#card-number{
       background-color: red;
 }
@@ -237,12 +244,64 @@ font-size: 5vw;
       padding: 3vw 6vw;
 
 }
+.gci{
+      width: 15%;
+}
 .cards{
       flex-direction: column;
       gap:1vw;
+}
+.cards img{
+      width: 20%;
 }
 .footer{
       margin-top: 2vw;
       font-size: 4vw;
 }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+      
+      .StripeFormBox1 img{
+            width: 20%;
+            height: 20%;
+      }
+      .text h3{
+            font-size: 3vw;
+            font-weight: 400;
+      }
+      .text span{
+            color: #000;
+            font-weight: 600;
+            font-size: 2vw;
+      }
+      .text p{
+            font-size: 2vw;
+      }
+      .buttons button{
+            padding: 2vw 7vw;
+            font-size: 2vw;
+      }
+      .input1 p{
+            width: 40vw;
+      }
+      .captcha p{
+            width: 40vw;
+      }
+      .gci{
+            width: 20%;
+            height: 20%;
+            }
+            .cards{
+                  gap:4vw;
+            }
+            .footer p{
+                  font-size: 2vw;
+            } 
+            .footer h4{
+                  font-size: 2vw;
+            } 
+
 }

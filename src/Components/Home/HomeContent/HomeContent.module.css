@@ -23,7 +23,7 @@
 
 .content1{
       width: 45vw;
-      height: 50vh;
+      height: fit-content;
       /* background-color:; */
       padding: 4vw;  
       margin-top: 5vw;  
@@ -147,19 +147,22 @@
       display: flex;
       align-items: center;
       justify-content:space-around;
-      padding: 2vw;
+      padding: 1vw;
 }
 .amountInputs input{
-      padding: .3vw .5vw;
+      padding: 0vw 0vw;
       background-color: #282E44;
       border: none;
       outline: none;
       border-radius: 5px;
       color: #fff;
+     
 }
 .amountSpan{
       padding: 1vw .3vw;
       background-color: #282E44;
+      border:  1px solid #7191B7;
+border-radius: 5px;
 }
 .amountSpan span{
       background-color: #3F4866;
@@ -178,6 +181,7 @@
       justify-content: space-around;
       padding: 1vw;
       margin-top: 0vw;
+      
 }
 .runescape input{
       padding: 1.3vw 1.8vw;
@@ -186,6 +190,8 @@
       outline: none;
       border-radius: 5px;
       color: #fff;
+      border:  1px solid #7191B7;
+      border-radius: 5px;
 }
 .gci{
       width: 85%;
@@ -194,7 +200,7 @@
       object-position: center;
 }
 .visaCards {
-      padding: 3vw;
+      padding:2vw;
    
 }
 .visaCards h6{
@@ -251,10 +257,11 @@ justify-content: space-evenly;
       background-color: #373F5A;
       border-radius: 6px;
       transition: all ease 1s;
+
 }
 .visa1 img{
-      width: 70%;
-      height: 70%;
+      width: 65%;
+      height: 65%;
 }
 .visaMore{
       display: flex;
@@ -357,6 +364,7 @@ height: 8%;
             width: 90%;
             height: fit-content;
             margin-top: 5vw;
+            padding: 2vw;
       }
       .content1 .heading1{
             font-size: 5vw;
@@ -431,7 +439,7 @@ height: 8%;
       .runescape input{
             width: 50%;
             padding: 3vw 2vw;
-            font-size: 4vw;
+            font-size: 3.5vw;
       }
       .visaCards{
             margin-top: 2vw;
@@ -442,13 +450,14 @@ height: 8%;
       .visa1{
             margin-top: 2vw;
             width: 30%;
+            height: 5vh;
             padding: 1vw 3vw;
       }
       .visa1 img{
             width: 90%;
       }.buyButton button{
             font-size: 4vw;
-            padding: 1vw 3vw;
+            padding: 3vw 3vw;
       }
       .whyPie{
             margin-top: 4vw;
@@ -463,3 +472,98 @@ height: 8%;
       }
 }
 
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .content1{
+            width: 40vw;
+      }
+      .content1 .heading1{
+            font-size: 3vw;
+      }
+      .content1 .heading1{
+            font-size: 4vw;
+      }
+
+      .content2{
+            width: 50vw;
+            height: fit-content;
+            /* padding: 3vw; */
+      }
+      .mainContentBtn{
+            gap: 2vw;
+      }
+      .mainContentBtn p{
+            color: #8891B7;
+            font-size: 2vw;
+      }
+      .mainContentBtn1{
+            font-size: 3vw;
+            padding: 1.5vw 2.5vw;
+      }
+      .mainContentBtn1 span{
+            font-size: 2vw;
+      }
+      .payments{
+            width: 90%;
+            padding: 2vw;
+      }
+      .cards h6{
+            font-size: 2vw;
+      }
+      .content2Btns2{
+            width: 45%;
+      }
+      .content2Btns1{
+            width: 45%;
+      }
+      .ShoppingCart{
+            font-size: 3vw;
+      }
+      .TotalPrice h6{
+            font-size: 2vw;
+      }
+      .TotalPrice p{
+            font-size: 2vw;
+      }
+      .amountInputs p{
+            font-size: 2vw;
+      }
+      .amountInputs{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 2vw;
+            /* padding: 1v w; */
+      }
+      .amountInputs input{
+            width: 70%;
+            padding: 1vw;
+            font-size: 2vw;
+      }
+      .price p{
+            font-size: 2vw;
+      }
+      .runescape input {
+            width: 46%;
+            padding: 2vw;
+            font-size: 2vw;
+      }
+      .gci{
+            width: 70%;
+            height: 70%;
+      } 
+      .visaCards h6{
+            font-size: 2vw;
+      }
+      .visa1{
+            width: 30%;
+            height: 5vh;
+      }
+      .buyButton button{
+            font-size: 2vw;
+            padding: 1.5vw;
+      } 
+      .whyPie h5{
+            font-size: 2.3vw;
+      }
+    }

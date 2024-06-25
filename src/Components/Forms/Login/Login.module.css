@@ -2,7 +2,7 @@
 .Login{
       position: fixed;
       width: 57vw;
-      height: 90vh;
+      height: fit-content;
       background-color:#2F354D;
       border-radius: 10px;
       top: 5%;
@@ -13,11 +13,12 @@
       display: flex;
       align-items: center;
       z-index: 1000;
+      padding: 1vw;
       /* display: none; */
 }
 .LoginSide1{
 width: 50%;
-height: 100%;
+height: fit-content;
 background: linear-gradient(rgba(40, 47, 71, 1), rgba(40, 47, 71, 0.9)), url(../../../images/backgroungImg.jpg);
 background-size: cover;
 background-position: center;
@@ -44,7 +45,7 @@ background-color: #2F354D;
       justify-content: end;
 }
 .mainImg img{
-      width: 90%;
+      width: 100%;
       height: 40%;
 }
 .pTag{
@@ -139,13 +140,10 @@ font-size: 1.2vw;
 @media screen and (width > 300px) and (width < 768px){
       .Login{
             position: fi;
-            top: 0%;
-            left: 13%;
-            /* right: 30%; */
-            /* display: flex;
-            align-items: center;
-            justify-content: center; */
-            width: 75%;
+            top: 10%;
+            left: 10%;
+
+            width: 80%;
             height: fit-content;
             margin-top: 30vw;
             padding: 5vw 2vw;
@@ -161,6 +159,7 @@ font-size: 1.2vw;
       }
       .inputBox{
             gap: 4vw;
+            margin-top: 10vw;
       }
       .inputBox p{
             font-size: 4vw;
@@ -169,7 +168,9 @@ font-size: 1.2vw;
             width: 90%;
             font-size: 4vw;
             padding: 3vw 2vw;
+            /* margin-top: 1vw; */
       }
+
       .inputBox button{
             width: 90%;
             font-size: 4vw;
@@ -179,7 +180,42 @@ font-size: 1.2vw;
             font-size: 4vw;
       }
       .JumpReg p{
-            font-size: 4vw;
+            font-size: 3vw;
       }
 }
 
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+      .Login{
+           top: 30%;
+      }
+      .logo img{
+            width: 35%;
+            height: 35%;
+      }
+      .pTag p{
+            font-size: 2vw;
+      }
+      .cross{
+            font-size: 3vw;
+      }
+      .inputBox p{
+            font-size: 2vw;
+      }
+      .inputBox input{
+            width: 90%;
+            font-size: 2vw;
+            padding: 2vw 1vw;
+      }
+      .inputBox button{
+            width: 90%;
+            font-size: 2.3vw;
+      }
+      .Jump{
+            font-size: 1.5vw;
+      }
+    }

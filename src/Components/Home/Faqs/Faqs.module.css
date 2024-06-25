@@ -123,3 +123,31 @@
         padding: 1.5vw 7vw;
       }
     }
+
+
+    @media only screen and (min-width: 768px) and (max-width: 1000px) {
+
+.FAQS{
+  padding: 3vw;
+}
+
+      .FAQSBox h5 {
+        font-size: 3vw;
+      }
+      .FAQdiv {
+        padding: 1.5vw;
+      }
+      .FAQSBox h4{
+        font-size: 2.5vw;
+        font-weight: 200;
+      }
+      .FAQSBox p{
+        font-size: 2.3vw;
+      }
+      .IoIosArrowForward {
+        font-size: 3vw;
+      }
+      .FAQpTag {
+        font-size: 1.5vw;
+      }
+    }

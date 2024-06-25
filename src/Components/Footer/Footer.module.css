@@ -2,14 +2,16 @@
 
 .footer{
       width: 100vw;
-      height: 50vh;
+      height: fit-content;
       background-color:#282D44;
       /* font-size: 3vw; */
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 4vw;
+padding: 1vw;
 }
+
 .footer1{
       width: 15%;
       height: 70%;
@@ -71,16 +73,17 @@
       align-items: center;
       justify-content: space-between;
       gap: 5vw;
-      width: 27%;
+      width: 30%;
 }
 .bottomFtr{
       width: 100vw;
-      height: 7vh;
+      height: fit-content;
       background-color: #2C3149;
       display: flex;
       align-items: center;
       justify-content: space-around;
       gap: 5vw;
+      padding: 2vw;
 }
 .bottomFtr p{
       color: #8891B7;
@@ -125,7 +128,7 @@ height: 100%;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 4vw;
+            padding: 1vw;
       }
       .bottomFtr{
             width: 100vw;
@@ -140,3 +143,40 @@ height: 100%;
             text-align: center;
       }
 }
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+
+      .footer{
+            gap:2vw;
+      }
+      .footer1{
+            width: 40%;
+      }
+      .footer1 img{
+            width: 80%;
+            height: 80%;
+      }
+      .footer4{
+            width: 40%;
+      }
+      .footer2 h4{
+            font-size: 2.5vw;
+      }
+      .feature{
+            /* gap: 10vw; */
+            width: 100%;
+      }
+      .bottomFtr p{
+            color: #8891B7;
+            font-size: 1.5vw;
+      }
+      .bottomFtr{
+            flex-direction: column;
+      }
+      .bottomFtr p{
+            color: #8891B7;
+            font-size: 2vw;
+      }
+    }

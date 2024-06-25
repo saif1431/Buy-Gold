@@ -187,3 +187,40 @@ width: 100%;
             padding: 3vw;   
       }
 } 
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+      
+
+      .popupContent {
+            width: 50%;
+            height: 60%;
+           padding: 2vw;
+      }
+      .closeIcon {
+            color: #616c9d;
+            cursor: pointer;
+            font-size: 2.5vw;
+          }
+          .popupHeader h5{
+            color: #fff;
+            font-size: 2vw;
+          }
+          .inputFields input{
+            width: 90%;
+            padding: 2vw;
+            font-size: 2vw;
+          }
+          .check{
+            width:90%;
+          }
+          .proceed{
+padding: 2vw;
+font-size: 2vw;
+          }
+          .cancel{
+padding: 2vw;
+font-size: 2vw;
+          }
+
+    }
