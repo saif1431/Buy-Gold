@@ -19,7 +19,7 @@ const Login = forwardRef(({ onClose, openSignUp, setIsAuth }, ref) => {
     e.preventDefault();
     
     try {
-      const response = await axios.post('http://localhost:5000/login', { email, password });
+      const response = await axios.post('https://buy-gold-server.vercel.app/login', { email, password });
       if (response.status === 200) {
         // Storing token and user data in local storage
         localStorage.setItem('token', response.data.token);
@@ -38,7 +38,7 @@ const Login = forwardRef(({ onClose, openSignUp, setIsAuth }, ref) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/forget-password', { email: forgotEmail });
+      const response = await axios.post('https://buy-gold-server.vercel.app/forget-password', { email: forgotEmail });
       if (response.status === 200) {
         setForgotMessage('New password sent to your email');
         setForgotError('');

@@ -8,7 +8,7 @@ function SupportForm() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const response = await fetch('http://localhost:5000/support', {
+    const response = await fetch('https://buy-gold-server.vercel.app/support', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

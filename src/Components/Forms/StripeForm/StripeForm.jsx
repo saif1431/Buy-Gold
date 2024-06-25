@@ -36,7 +36,7 @@ function StripeForm() {
           amount: 5000,
         };
         
-        const { data } = await axios.post(`http://127.0.0.1:5000/create-payment-intent`, paymentData, config);
+        const { data } = await axios.post(`https://buy-gold-server.vercel.app/create-payment-intent`, paymentData, config);
         setClientSecret(data.clientSecret);
       } catch (error) {
         setErrorMessage('Failed to initialize payment');
