@@ -31,7 +31,7 @@ const SignUp = forwardRef(({ onClose, openLogin }, ref) => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/signup', { email, password });
+      const response = await axios.post('https://buy-gold-server.vercel.app/signup', { email, password });
       if (response.status === 201) {
         alert('Registration successful');
         openLogin();
