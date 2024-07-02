@@ -1,0 +1,206 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+
+.TrancHistory{
+      width: 100vw;
+      height: 70vh;
+      background-color: #272B41;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
+      padding: 2vw;
+}
+.TrancHistoryBox{
+      width: 20%;
+      height: 80%;
+      background-color: #2F354D;
+      border-radius: 10px;
+      border:  1px solid #717eab;
+}
+.TrancHistoryBox2{
+      width: 70%;
+      height: 80%;
+      background-color: #2F354D;
+      border-radius: 10px;
+      border:  1px solid #717eab;
+}
+.Buttons{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      /* justify-content: center; */
+      /* align-items: center; */
+      gap: 3vw;
+      padding: 1vw;
+}
+.Logout{
+      width: 90%;
+      background-color: #3A415A;
+      border: none;
+      outline: none;
+      color: #717eab;
+      font-size: 1.2vw;
+      padding: 1vw;
+}
+.orderHistory{
+      width: 90%;
+      background-color: #3A415A;
+      border: none;
+      outline: none;
+      color: #717eab;
+      font-size: 1.2vw;
+      padding: 1vw;
+      border: .5px solid #2CF39F;
+}
+
+.TrancHistoryBox2 P{
+      color: #717eab;
+      padding: 2vw;
+      font-size: 1.3vw;
+}
+.TrancHistorydiv{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+}
+.TrancHistorydiv img{
+      width: 10%;
+      height: 10%;
+}
+.TrancHistorydiv button{
+      width: 20%;
+      background-color: #2CF39F;
+      border: none;
+      outline: none;
+      color: #fff;
+      font-size: 1.3vw;
+      padding: 1vw;
+      border-radius: 5px;
+      cursor: pointer;
+      -webkit-transition: all ease 1s;
+      -o-transition: all ease 1s;
+      transition: all ease 1s;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+}
+.shooping{
+      font-size: 1.7vw;
+}
+
+@media screen and (width > 300px) and (width < 768px){
+      .TrancHistory{
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            gap: 4vw;
+            /* margin-top: 5vw; */
+      }
+      .TrancHistoryBox{
+            width: 80%;
+            height: -webkit-fit-content;
+            height: -moz-fit-content;
+            height: fit-content;
+            padding: 2vw;
+            margin-top: 5vw;
+      }
+      .TrancHistoryBox2{
+            width: 80%;
+            height: -webkit-fit-content;
+            height: -moz-fit-content;
+            height: fit-content;
+            padding: 3vw;
+      }
+      .Buttons{
+            gap: 4vw;
+            padding: 3vw;
+      }
+      .Logout, .orderHistory{
+            width: 80%;
+            padding: 3vw;
+            font-size: 5vw;
+      }
+      .TrancHistoryBox2 P{
+            font-size: 4vw;
+      }
+      .TrancHistorydiv img{
+            width: 30%;
+            height: 30%;
+      }
+      .TrancHistorydiv button{
+            width: 70%;
+            font-size: 5vw;
+            padding: 3vw;
+      }
+      .shooping{
+            font-size: 5vw;
+      }
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+      .TrancHistoryBox{
+            width: 25%;
+            height: 40%;
+      }
+      .TrancHistoryBox2{
+            width: 70%;
+            height: -webkit-fit-content;
+            height: -moz-fit-content;
+            height: fit-content;
+            padding: 1vw;
+      }
+      .Logout{
+            font-size: 2.5vw;
+      }
+      .orderHistory{
+            font-size: 2.5vw;
+      }
+      .TrancHistoryBox2 P{
+            font-size: 2.5vw;
+      }
+      .TrancHistorydiv img{
+            width: 20%;
+            height: 20%;
+      }
+      .TrancHistorydiv button{
+            width: 30%;
+            padding: 2vw;
+            font-size: 2.5vw;
+      }
+    }

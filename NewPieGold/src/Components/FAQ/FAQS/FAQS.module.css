@@ -1,0 +1,204 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.FAQS {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 47, 71, 1)), to(rgba(40, 47, 71, 0.9))), url(../../../images/backgroungImg.jpg);
+  background: -o-linear-gradient(rgba(40, 47, 71, 1), rgba(40, 47, 71, 0.9)), url(../../../images/backgroungImg.jpg);
+  background: linear-gradient(rgba(40, 47, 71, 1), rgba(40, 47, 71, 0.9)), url(../../../images/backgroungImg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 4vw 8vw;
+  /* margin-top: 8vw; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.FAQSBox {
+  width: 50%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #2F354D;
+  border-radius: 8px;
+  border: 1px solid #566781;
+  padding: 2vw;
+}
+
+.FAQSBox h5 {
+  text-align: center;
+  padding: 2vw;
+  font-size: 1.2vw;
+}
+
+.FAQdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1vw;
+  cursor: pointer;
+}
+.IoIosArrowForward {
+  background-color: #fff;
+  color: #000;
+  border-radius: 50px;
+  font-size: 1.3vw;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.FAQSBox h4{
+  font-size: 1.1vw;
+  font-weight: 300;
+}
+.IoIosArrowForward.rotate {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.FAQpTag {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
+  -o-transition: max-height 0.5s ease, opacity 0.5s ease;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  padding: 0 10px;
+  background-color: #373F5A;
+  color: #8891B7;
+  font-size: 1vw;
+  border-radius: 7px;
+  display: none;
+}
+
+.FAQpTag.show {
+  max-height: 1000px; /* Adjust this value to accommodate your content */
+  opacity: 1;
+  padding: 10px;
+  display: block;
+}
+
+.FAQSBox1, .FAQSBox2, .FAQSBox3, .FAQSBox4, .FAQSBox5, .FAQSBox6, .FAQSBox7 {
+  width: 90%;
+  /* border: 1px solid #ddd; */
+  background-color: #373F5A;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin:  0 auto;
+  margin-top: .7vw;
+}
+
+.support{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.support button{
+  padding: 1vw 5vw;
+  font-size: 1.3vw;
+  border-radius: 7px;
+  background-color: #24D093;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+
+@media screen and (width > 300px) and (width < 768px){
+  .FAQSBox{
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 20vw;
+  }
+  .FAQSBox h5 {
+    font-size: 5vw;
+  }
+  .IoIosArrowForward {
+    font-size: 5vw;
+  }
+  .FAQdiv {
+    padding: 3.5vw;
+  }
+  .FAQSBox h4{
+    font-size: 3.5vw;
+    font-weight: 300;
+  }
+  .FAQpTag {
+    font-size: 3vw;
+  }
+  .FAQSBox1, .FAQSBox2, .FAQSBox3, .FAQSBox4, .FAQSBox5, .FAQSBox6, .FAQSBox7 {
+    width: 100%;
+    margin-top: 3vw;
+  }
+  .support{
+    margin-top: 4vw;
+  }
+  .support button{
+    font-size: 4vw;
+    padding: 1.5vw 7vw;
+  }
+}
+
+@media only screen and (width > 768px) and (max-width: 1024px) {
+
+
+  .FAQSBox h5 {
+    font-size: 2.5vw;
+  }
+  .FAQSBox {
+    width: 60%;
+  }
+  .FAQdiv {
+    padding: 2vw;
+  }
+  .IoIosArrowForward {
+    font-size: 2vw;
+  }
+  .FAQSBox h4{
+    font-size: 1.6vw;
+    font-weight: 300;
+  }
+  .FAQSBox p{
+    font-size: 1.7vw;
+  }
+  .support button{
+    font-size: 3vw;
+    padding: 2vw 4vw;
+  }
+}

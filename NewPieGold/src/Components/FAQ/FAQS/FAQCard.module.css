@@ -1,0 +1,152 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.FAQCardContainer {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1vw 10vw;
+  background-color: #2F354D;
+}
+
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+  font-size: 3vw;
+}
+
+.star {
+  color: #ffc107;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.card {
+  background-color: 07078f;
+  padding: 2vw;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  color: #000;
+  border-radius: 5px;
+  width: 30vw;
+  height: 30vh;
+  color: #000;
+}
+.card h2{
+  font-size: 1.3vw;
+  font-weight: 500;
+}
+.card h6{
+  font-size: 1.1vw;
+  color: #ffc107;
+}
+.rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* justify-content: center; */
+  margin: 10px 0;
+  /* font-size: 1vw; */
+}
+.rating img{
+  width: 45%;
+  height: 45%;
+}
+.card p{
+  font-size: 1.2vw;
+}
+
+.slick-prev, .slick-next {
+  z-index: 1;
+  padding: 1vw 7vw;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #fff;
+  font-size: 3vw;
+}
+.slick-prev:after, .slick-next:after {
+  color: #fff;
+  font-size: 7vw;
+}
+.footerrating{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1.5vw;
+}
+.footerrating p{
+  color: #DEF0F2;
+}
+
+@media screen and (width > 300px) and (width < 768px){
+  .card{
+    width: 90vw;
+    height: 20vh;
+  }
+  .card h2{
+    font-size: 5vw;
+  }
+  .card h6{
+    font-size: 3vw;
+    font-weight: 300;
+  }
+  .rating {
+    font-size: 5vw;
+  }
+  .card p{
+    width: 90%;
+    font-size: 4vw;
+  }
+}
+
+@media only screen and (width > 768px) and (max-width: 1024px) {
+  .heading {
+    font-size: 5vw;
+  }
+  .star {
+    font-size: 30px;
+  }
+  .card{
+    width: 35vw;
+    height: 20vh;
+  }
+  .card h2{
+    font-size: 2.5vw;
+    font-weight: 500;
+  }
+  .card h6{
+    font-size: 2vw;
+    color: #ffc107;
+  }
+  .rating img{
+    width: 60%;
+    height: 60%;
+  }
+  .card p{
+    font-size: 1.7vw;
+  }
+}

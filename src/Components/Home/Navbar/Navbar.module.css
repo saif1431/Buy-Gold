@@ -1,6 +1,4 @@
-/* Prefixed by https://autoprefixer.github.io */
-/* PostCSS: v8.4.14, Autoprefixer: v10.4.7 */
-/* Browsers: last 4 versions */
+
 * {
       margin: 0;
       padding: 0;
@@ -355,7 +353,7 @@
       }
     }
     
-    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    @media only screen and (width > 768px) and (max-width: 1024px) {
       .navbar {
         width: 100vw;
         height: 13vh;

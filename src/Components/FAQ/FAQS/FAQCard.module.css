@@ -5,6 +5,11 @@
 * Browsers: last 4 version
 */
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .FAQCardContainer {
   width: 100%;
   height: -webkit-fit-content;
@@ -19,11 +24,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-bottom: 20px;
   font-size: 3vw;
 }
@@ -88,21 +93,21 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 1.5vw;
 }
 .footerrating p{
   color: #DEF0F2;
 }
 
-@media screen and (width > 300px) and (width < 768px){
+@media screen and (max-width: 768px){
   .card{
     width: 90vw;
     height: 20vh;
@@ -123,7 +128,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (width > 768px) and (max-width: 1024px) {
   .heading {
     font-size: 5vw;
   }

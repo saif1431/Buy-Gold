@@ -4,9 +4,11 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
-
-
-
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 .termsServices{
       width: 100vw;
       height: -webkit-fit-content;

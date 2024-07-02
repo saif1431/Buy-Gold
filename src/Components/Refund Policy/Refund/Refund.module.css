@@ -4,8 +4,12 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
-
-
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
 .refund{
       width: 100vw;
       height: -webkit-fit-content;
@@ -66,3 +70,4 @@ padding: 2vw;
             font-size: 3.8vw;
       }
 }
+
