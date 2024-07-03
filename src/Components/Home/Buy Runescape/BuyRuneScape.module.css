@@ -1,117 +1,110 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 
 *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .buyRuneScape {
-      width: 100vw;
-      height: -webkit-fit-content;
-      height: -moz-fit-content;
-      height: fit-content;
-      background: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 47, 71, 1.5)), to(rgba(40, 47, 71, 1.2))), url(../../../images/backgroungImg.jpg);
-      background: -o-linear-gradient(rgba(40, 47, 71, 1.5), rgba(40, 47, 71, 1.2)), url(../../../images/backgroungImg.jpg);
-      background: linear-gradient(rgba(40, 47, 71, 1.5), rgba(40, 47, 71, 1.2)), url(../../../images/backgroungImg.jpg);
-      background-size: cover;
-      background-position: center;
-      padding: 5vw;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      gap: 1.5vw;
-      margin-top: 0vw;
-    }
-    
-    .buyRuneScape h1 {
-      font-size: 2.4vw;
-    }
-    
-    .buyRuneScape p {
-      color: #8891B7;
-      font-size: 1.4vw;
-    }
-    
-    .buyRuneScape button {
-      width: 18%;
-      padding: 1vw 2vw;
-      background-color: #1BB67F;
-      border: none;
-      outline: none;
-      color: #fff;
-      border-radius: 7px;
-      font-size: 1.2vw;
-      cursor: pointer;
-      -webkit-transition: all ease 1s;
-      -o-transition: all ease 1s;
-      transition: all ease 1s;
-    }
-    
-    .buyRuneScape button:hover {
-      background-color: #1cce90;
-    }
-    
-    @media screen and (width > 300px) and (width < 768px) {
-      .buyRuneScape {
-        margin-top: 3vw;
-        width: 100%;
-        height: 25vh;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        gap: 3vw;
-      }
-    
-      .buyRuneScape h1 {
-        font-size: 5vw;
-      }
-    
-      .buyRuneScape p {
-        color: #8891B7;
-        font-size: 3.5vw;
-        text-align: center;
-      }
-    
-      .buyRuneScape button {
-        width: 60%;
-        font-size: 4.8vw;
-        padding: 3vw 4vw;
-      }
-    }
-    
-    @media only screen and (width > 768px) and (max-width: 1024px) {
-      .buyRuneScape h1 {
-        font-size: 3vw;
-      }
-    
-      .buyRuneScape p {
-        color: #8891B7;
-        font-size: 2vw;
-      }
-    
-      .buyRuneScape button {
-        width: 30%;
-        font-size: 2.5vw;
-        padding: 2vw 0vw;
-      }
-    }
-    
+  width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 47, 71, 1.5)), to(rgba(40, 47, 71, 1.2))), url(../../../images/backgroungImg.jpg);
+  background: -o-linear-gradient(rgba(40, 47, 71, 1.5), rgba(40, 47, 71, 1.2)), url(../../../images/backgroungImg.jpg);
+  background: linear-gradient(rgba(40, 47, 71, 1.5), rgba(40, 47, 71, 1.2)), url(../../../images/backgroungImg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5vw;
+  margin-top: 0vw;
+}
+
+.buyRuneScape h1 {
+  font-size: 2.4vw;
+}
+
+.buyRuneScape p {
+  color: #8891B7;
+  font-size: 1.4vw;
+}
+
+.buyRuneScape button {
+  width: 18%;
+  padding: 1vw 2vw;
+  background-color: #1BB67F;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 7px;
+  font-size: 1.2vw;
+  cursor: pointer;
+  -webkit-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.buyRuneScape button:hover {
+  background-color: #1cce90;
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .buyRuneScape {
+    margin-top: 3vw;
+    width: 100%;
+    height: 25vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 3vw;
+  }
+
+  .buyRuneScape h1 {
+    font-size: 5vw;
+  }
+
+  .buyRuneScape p {
+    color: #8891B7;
+    font-size: 3.5vw;
+    text-align: center;
+  }
+
+  .buyRuneScape button {
+    width: 60%;
+    font-size: 4.8vw;
+    padding: 3vw 4vw;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .buyRuneScape h1 {
+    font-size: 3vw;
+  }
+
+  .buyRuneScape p {
+    color: #8891B7;
+    font-size: 2vw;
+  }
+
+  .buyRuneScape button {
+    width: 30%;
+    font-size: 2.5vw;
+    padding: 2vw 0vw;
+  }
+}

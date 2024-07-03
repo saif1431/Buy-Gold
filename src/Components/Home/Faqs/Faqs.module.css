@@ -4,8 +4,7 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -38,11 +37,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 1vw;
   cursor: pointer;
 }
@@ -53,8 +52,8 @@
   border-radius: 50px;
   font-size: 1.3vw;
   -webkit-transition: -webkit-transform 0.3s ease;
+  -o-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
-  -o-transition: transform 0.3s ease;
   transition: transform 0.3s ease;
 }
 
@@ -65,8 +64,8 @@
 
 .IoIosArrowForward.rotate {
   -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .FAQSBox p {
@@ -108,6 +107,8 @@
   margin-bottom: 10px;
   border-radius: 5px;
   overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   margin: 0 auto;
   margin-top: 0.7vw;
@@ -118,12 +119,12 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 @media screen and (width > 300px) and (width < 768px) {
@@ -131,39 +132,39 @@
     margin-top: 6vw;
     padding: 3vw;
   }
-  
+
   .FAQSBox {
     width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
-  
+
   .FAQSBox h5 {
     font-size: 5vw;
   }
-  
+
   .FAQSBox p {
     font-size: 3vw;
   }
-  
+
   .IoIosArrowForward {
     font-size: 5vw;
   }
-  
+
   .FAQdiv {
     padding: 3.5vw;
   }
-  
+
   .FAQSBox h4 {
     font-size: 3.5vw;
     font-weight: 300;
   }
-  
+
   .FAQpTag {
     font-size: 3vw;
   }
-  
+
   .FAQSBox1,
   .FAQSBox2,
   .FAQSBox3,
@@ -174,11 +175,11 @@
     width: 100%;
     margin-top: 3vw;
   }
-  
+
   .support {
     margin-top: 4vw;
   }
-  
+
   .support button {
     font-size: 4vw;
     padding: 1.5vw 7vw;
@@ -189,28 +190,28 @@
   .FAQS {
     padding: 3vw;
   }
-  
+
   .FAQSBox h5 {
     font-size: 3vw;
   }
-  
+
   .FAQdiv {
     padding: 1.5vw;
   }
-  
+
   .FAQSBox h4 {
     font-size: 2.5vw;
     font-weight: 200;
   }
-  
+
   .FAQSBox p {
     font-size: 2.3vw;
   }
-  
+
   .IoIosArrowForward {
     font-size: 3vw;
   }
-  
+
   .FAQpTag {
     font-size: 1.5vw;
   }

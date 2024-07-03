@@ -110,7 +110,7 @@
 @media screen and (max-width: 768px){
   .card{
     width: 90vw;
-    height: 20vh;
+    height: 25vh;
   }
   .card h2{
     font-size: 5vw;
