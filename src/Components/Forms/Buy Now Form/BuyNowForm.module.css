@@ -244,10 +244,15 @@
     
       .check {
         width: 100%;
+        gap: 3vw;
       }
     
+      .check p{
+        font-size: 3.8vw;
+      }
       .check input {
         font-size: 4vw;
+        height: 10vw;
       }
     
       .paymentbtn {

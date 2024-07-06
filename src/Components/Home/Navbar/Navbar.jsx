@@ -186,8 +186,8 @@ function Navbar() {
         <div className={styles.logo}>
           <IoMenu onClick={handleMenu} className={styles.menubar} />
           <img src={image} alt="" />
-          <Link to={"/Support"}>
-          <RiContactsFill className={styles.contact} /></Link>
+          
+          <RiContactsFill onClick={openLogin} className={styles.contact} />
         </div>
         <div className={styles.navItems}>
           <div className={styles.navItems1}>

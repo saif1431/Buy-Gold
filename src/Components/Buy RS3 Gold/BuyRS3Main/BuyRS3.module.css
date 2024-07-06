@@ -407,6 +407,9 @@ html, body {
   }
   
   @media screen and (min-width: 300px) and (max-width: 768px) {
+    .container{
+        padding: 5vw 0;
+    }
       .mainContent {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -424,7 +427,7 @@ html, body {
       }
       .payments {
             overflow-x: hidden;
-            width: 90%;
+            width: 100%;
             height: -webkit-fit-content;
             height: -moz-fit-content;
             height: fit-content;
@@ -451,10 +454,10 @@ html, body {
             padding: 1vw 4vw;
       }
       .content2Btns1 {
-            width: 45%;
+            width: 49%;
       }
       .content2Btns2 {
-            width: 45%;
+            width: 49%;
       }
       .mainContentBtn1 span {
             font-size: 5vw;
@@ -564,6 +567,7 @@ html, body {
 }
 
 @media only screen and (width > 768px) and (max-width: 1024px) {
+    
       .content1 {
             width: 40vw;
       }

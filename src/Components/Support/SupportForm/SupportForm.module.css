@@ -4,15 +4,15 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
-*{
+* {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-    }
-html, body{
+  }
+  html, body {
       overflow-x: hidden;
-}
-.supportForm{
+  }
+  .supportForm {
       width: 100vw;
       height: -webkit-fit-content;
       height: -moz-fit-content;
@@ -23,20 +23,18 @@ html, body{
       background-size: cover;
       background-position: center;
       padding: 3vw 8vw;
-      /* margin-top: 9VW; */
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
       -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-              z-index: 1000;
-      
-}
-.supportFormDiv{
+      -ms-flex-pack: center;
+      justify-content: center;
+      z-index: 1000;
+  }
+  .supportFormDiv {
       width: 50%;
       height: -webkit-fit-content;
       height: -moz-fit-content;
@@ -44,30 +42,29 @@ html, body{
       background-color: #2F354D;
       border-radius: 8px;
       border: 1px solid #566781;
-}
-.supportFormDiv h3{
+  }
+  .supportFormDiv h3 {
       text-align: center;
       padding: 1vw;
-}
-.supportFormDiv p{
+  }
+  .supportFormDiv p {
       width: 100%;
       padding: 2vw;
       color: #7191B7;
       font-size: 1vw;
-}
-.SupportInput{
+  }
+  .SupportInput {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
       -ms-flex-pack: distribute;
-          justify-content: space-around;
+      justify-content: space-around;
       gap: 1vw;
-      /* padding: 1vw; */
-}
-.SupportInput input{
+  }
+  .SupportInput input {
       width: 70%;
       padding: 1.4vw 3vw;
       border: none;
@@ -77,23 +74,23 @@ html, body{
       background-color: #282E44;
       color: #7191B7;
       border: 1px solid #7191b748;
-}
-.SupportInput input::-webkit-input-placeholder{
+  }
+  .SupportInput input::-webkit-input-placeholder {
       color: #7191B7;
-}
-.SupportInput input::-moz-placeholder{
+  }
+  .SupportInput input::-moz-placeholder {
       color: #7191B7;
-}
-.SupportInput input:-ms-input-placeholder{
+  }
+  .SupportInput input:-ms-input-placeholder {
       color: #7191B7;
-}
-.SupportInput input::-ms-input-placeholder{
+  }
+  .SupportInput input::-ms-input-placeholder {
       color: #7191B7;
-}
-.SupportInput input::placeholder{
+  }
+  .SupportInput input::placeholder {
       color: #7191B7;
-}
-.SupportInput select{
+  }
+  .SupportInput select {
       width: 70%;
       padding: 1.4vw 3vw;
       border: none;
@@ -103,14 +100,13 @@ html, body{
       background-color: #282E44;
       color: #7191B7;
       border: 1px solid #7191b748;
-}
-
-.SupportInput select option{
+  }
+  .SupportInput select option {
       margin: 4vw;
-}
-textarea{
+  }
+  textarea {
       width: 82%;
-      padding: 1vw ;
+      padding: 1vw;
       border: none;
       outline: none;
       border-radius: 5px;
@@ -119,19 +115,19 @@ textarea{
       color: #7191B7;
       border: 1px solid #7191b748;
       margin-left: 2vw;
-}
-.supportBtn{
+  }
+  .supportBtn {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
       -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-}
-.supportFormDiv button{
+      -ms-flex-pack: center;
+      justify-content: center;
+  }
+  .supportFormDiv button {
       width: 100%;
       padding: 1vw;
       border: none;
@@ -146,135 +142,132 @@ textarea{
       -webkit-transition: all ease .5s;
       -o-transition: all ease .5s;
       transition: all ease .5s;
-}
-.companyInfo{
+  }
+  .companyInfo {
       padding: 2vw;
       color: #7191B7;
-}
-.companyInfo h4{
+  }
+  .companyInfo h4 {
       font-size: 1.2vw;
-}
-.info{
+  }
+  .info {
       margin-top: 1vw;
-      
-}
-.info h6{
+  }
+  .info h6 {
       font-size: 1vw;
       font-weight: 300;
-}
-
-@media screen and (width > 300px) and (width < 768px){
-      .supportForm{
-            padding: 8vw 5vw;
+  }
+  
+  @media screen and (min-width: 300px) and (max-width: 768px) {
+      .supportForm {
+          padding: 8vw 5vw;
       }
-      .supportFormDiv{
-            width: 100%;
-            height: -webkit-fit-content;
-            height: -moz-fit-content;
-            height: fit-content;
-            margin-top: 0vw;
+      .supportFormDiv {
+          width: 100%;
+          height: -webkit-fit-content;
+          height: -moz-fit-content;
+          height: fit-content;
+          margin-top: 0vw;
       }
-      .supportFormDiv h3{
-            font-size: 6vw;
+      .supportFormDiv h3 {
+          font-size: 6vw;
       }
-      .supportFormDiv p{
-            width: 100%;
-            font-size: 4vw;
-            padding: 8vw 5vw;
+      .supportFormDiv p {
+          width: 100%;
+          font-size: 4vw;
+          padding: 8vw 5vw;
+          text-align: center;
       }
-      .SupportInput{
-            width: 100%;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                    flex-direction: column;
-            /* padding: 4vw; */
-      } 
-      .SupportInput input{
-            width: 89%;
-            padding: 4vw;
-            font-size: 3vw;
-      }     
-      .SupportInput select{
-            width: 88%;
-            padding: 4vw;
-            font-size: 3vw;
-            margin-top: 1vw;
-      }     
-      textarea{
-            width: 90%;
-            padding: 2vw;
-            font-size: 3vw;
-            margin-left: 4vw;
+      .SupportInput {
+          width: 100%;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
       }
-      .supportBtn{
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                    flex-direction: column;
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
+      .SupportInput input {
+          width: 89%;
+          padding: 4vw;
+          font-size: 3vw;
       }
-      .supportFormDiv button{
-            /* width: 50%; */
-            padding: 4vw;
-            font-size: 3vw;
-            margin-top: 4vw;
+      .SupportInput select {
+          width: 89%;
+          padding: 4vw;
+          font-size: 3vw;
+          margin-top: 1vw;
+          margin-left: 2vw;
       }
-      .companyInfo{
-            margin-top: 1.5vw;
+      textarea {
+          width: 90%;
+          padding: 2vw;
+          font-size: 3vw;
+          margin-left: 4vw;
       }
-      .companyInfo h4{
-            font-size: 4vw;
+      .supportBtn {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
       }
-      .info h6{
-            font-size: 3vw;
-            font-weight: 300;
+      .supportFormDiv button {
+          padding: 4vw;
+          font-size: 3vw;
+          margin-top: 4vw;
       }
-}
-
-
-@media only screen and (width > 768px) and (max-width: 1024px) {
-
-
-      .supportFormDiv{
-            width: 70%;
+      .companyInfo {
+          margin-top: 1.5vw;
       }
-      .supportFormDiv p{
-            width: 90%;
-            font-size: 1.7vw;
+      .companyInfo h4 {
+          font-size: 4vw;
       }
-      .SupportInput{
-            width: 100%;
+      .info h6 {
+          font-size: 3vw;
+          font-weight: 300;
       }
-      .SupportInput input{
-            width: 90%;
-            font-size: 1.7vw;
-            padding: 2vw;
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .supportFormDiv {
+          width: 70%;
       }
-      .SupportInput select{
-            width: 90%;
-            font-size: 1.7vw;
-            padding: 2vw;
+      .supportFormDiv p {
+          width: 90%;
+          font-size: 1.7vw;
       }
-      textarea{
-            width: 90%;
-            font-size: 1.7vw;
-            padding: 2vw;
+      .SupportInput {
+          width: 100%;
       }
-      .supportFormDiv button{
-            font-size: 2.3vw;
-            padding: 2vw;
+      .SupportInput input {
+          width: 90%;
+          font-size: 1.7vw;
+          padding: 2vw;
       }
-      .companyInfo h4{
-            font-size: 2vw;
+      .SupportInput select {
+          width: 90%;
+          font-size: 1.7vw;
+          padding: 2vw;
       }
-      .info h6{
-            font-size: 1.7vw;
-            font-weight: 300;
+      textarea {
+          width: 90%;
+          font-size: 1.7vw;
+          padding: 2vw;
       }
-}
+      .supportFormDiv button {
+          font-size: 2.3vw;
+          padding: 2vw;
+      }
+      .companyInfo h4 {
+          font-size: 2vw;
+      }
+      .info h6 {
+          font-size: 1.7vw;
+          font-weight: 300;
+      }
+  }
+  

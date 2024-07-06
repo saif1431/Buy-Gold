@@ -112,6 +112,12 @@
     width: 90vw;
     height: 25vh;
   }
+  .heading{
+    margin-top: 2vw;
+  }
+  .heading h5{
+    font-size: 5vw;
+  }
   .card h2{
     font-size: 5vw;
   }

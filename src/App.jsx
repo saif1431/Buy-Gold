@@ -14,12 +14,6 @@ import RefundPolicy from './Components/Refund Policy/RefundPolicy.jsx';
 
 
 
-
-
-
-
-
-
 const stripePromise = loadStripe("pk_test_51NSNJfK5jFmIR9ElOjj4STpJI0aVKMH0i03dG5KM4cuLUvpV31hc8UMpE1DlJiYPxip50pLsl3hbezYSMipsdXJU007BaEo7ni");
 function App() {
   return (

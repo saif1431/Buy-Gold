@@ -1,18 +1,11 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 .FAQS {
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   background-color: #2C3149;
   padding: 1vw 3vw;
@@ -20,8 +13,6 @@
 
 .FAQSBox {
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   padding: 1vw;
 }
@@ -33,14 +24,8 @@
 }
 
 .FAQdiv {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 1vw;
   cursor: pointer;
@@ -51,9 +36,6 @@
   color: #000;
   border-radius: 50px;
   font-size: 1.3vw;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  -o-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
 }
 
@@ -63,20 +45,12 @@
 }
 
 .IoIosArrowForward.rotate {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
-}
-
-.FAQSBox p {
-  padding: 1vw 1vw;
 }
 
 .FAQpTag {
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
-  -o-transition: max-height 0.5s ease, opacity 0.5s ease;
   transition: max-height 0.5s ease, opacity 0.5s ease;
   opacity: 0;
   padding: 0 10px;
@@ -107,37 +81,22 @@
   margin-bottom: 10px;
   border-radius: 5px;
   overflow: hidden;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   margin: 0 auto;
   margin-top: 0.7vw;
 }
 
 .support {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
+  justify-content: center;
   flex-direction: column;
 }
 
-@media screen and (width > 300px) and (width < 768px) {
+@media screen and (max-width: 768px) {
   .FAQS {
     margin-top: 6vw;
     padding: 3vw;
-  }
-
-  .FAQSBox {
-    width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
   }
 
   .FAQSBox h5 {
