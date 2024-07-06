@@ -15,8 +15,11 @@ import discover from '../../../images/discoverjcb.svg';
 import ntl from '../../../images/ntl.svg';
 import pwy from '../../../images/pwy.svg';
 import buy from '../../../images/buy.svg';
+import BuyNowForm from '../../Forms/Buy Now Form/BuyNowForm.jsx';
+import Logo from '../../../images/twitters.png';
 import { AiFillSafetyCertificate } from "react-icons/ai";
 import { Link } from 'react-router-dom';
+// import BuyRS3Gold from '../../Buy RS3 Gold/BuyRS3Gold.jsx'
 
 
 
@@ -24,6 +27,7 @@ import { Link } from 'react-router-dom';
 function HomeContent() {
   const [selectedCard, setSelectedCard] = useState(null);
   const [showMore, setShowMore] = useState(false);
+  const [showForm, setShowForm] = useState(false); // State for the pop-up form
   const [amount, setAmount] = useState('');
   const [price, setPrice] = useState('');
 
@@ -37,6 +41,19 @@ function HomeContent() {
 
   const isSelected = (card) => selectedCard === card ? style.selectedCard : '';
 
+  const handleBuyNowClick = () => {
+    const paymentDetails = {
+      amount,
+      price,
+      selectedCard,
+    };
+    localStorage.setItem('paymentDetails', JSON.stringify(paymentDetails));
+    setShowForm(true);
+  };
+
+  const handleCloseForm = () => {
+    setShowForm(false);
+  };
   const handleAmountChange = (e) => {
     const amountValue = e.target.value;
     setAmount(amountValue);
@@ -56,11 +73,13 @@ function HomeContent() {
       selectedCard,
     };
     localStorage.setItem('paymentDetails', JSON.stringify(paymentDetails));
+    alert('Payment details stored in localStorage');
   };
 
   return (
     <>
-      <div className={style.container}>
+      <div className={showForm ? style.blurredBackground : ''}>
+        <div className={style.container}>
         <div className={style.mainContent}>
           <div className={style.content1}>
             <h1 className={style.heading1}>Buy & Sell</h1>
@@ -84,12 +103,14 @@ function HomeContent() {
           </div>
           <div className={style.content2}>
             <div className={style.content2Btns}>
-              <Link to="/" className={style.content2Btns1}>
+              <Link to={"/"} className={style.content2Btns1} >
+              <div>
                 <img src={svg1} alt="" />
-              </Link >
-              <Link to="/BuyRS3Gold" className={style.content2Btns2}>
-                <img src={svg2} alt="" />
+              </div>
               </Link>
+              <Link to={"/BuyRS3Gold"} className={style.content2Btns2} >
+                <img src={svg2} alt="" />
+            </Link>
             </div>
 
             <div className={style.payments}>
@@ -203,8 +224,9 @@ function HomeContent() {
 
               {/* BUTTON---------- */}
               <div className={style.buyButton}>
-                <button onClick={handleBuyNow}>
+                <button onClick={handleBuyNowClick}>
                 <AiFillSafetyCertificate className={style.safe} />
+
                   Buy Now
                 </button>
               </div>
@@ -218,6 +240,8 @@ function HomeContent() {
           <h2>No Verification</h2>
           <h2>No Registration Needed</h2>
         </div>
+      </div>
+      {showForm && <BuyNowForm onClose={handleCloseForm} />}
       </div>
     </>
   );
